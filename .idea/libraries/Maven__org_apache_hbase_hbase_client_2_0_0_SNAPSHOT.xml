@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.hbase:hbase-client:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/2.0.0-SNAPSHOT/hbase-client-2.0.0-20170103.202816-12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/2.0.0-SNAPSHOT/hbase-client-2.0.0-20170103.202816-12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/2.0.0-SNAPSHOT/hbase-client-2.0.0-20170103.202816-12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

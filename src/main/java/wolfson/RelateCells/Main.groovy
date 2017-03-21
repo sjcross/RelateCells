@@ -4,24 +4,23 @@ import fiji.plugin.trackmate.Logger
 import fiji.plugin.trackmate.Model
 import fiji.plugin.trackmate.Settings
 import fiji.plugin.trackmate.Spot
-import fiji.plugin.trackmate.SpotCollection
 import fiji.plugin.trackmate.TrackMate
 import fiji.plugin.trackmate.detection.DetectorKeys
 import fiji.plugin.trackmate.detection.LogDetectorFactory
 import fiji.plugin.trackmate.tracking.LAPUtils
 import fiji.plugin.trackmate.tracking.TrackerKeys
 import fiji.plugin.trackmate.tracking.oldlap.SimpleLAPTrackerFactory
+import fiji.plugin.trackmate.tracking.oldlap.hungarian.MunkresKuhnAlgorithm
 import ij.IJ
 import ij.ImageJ
 import ij.ImagePlus
 import ij.gui.OvalRoi
+import ij.gui.Overlay
 import ij.gui.PolygonRoi
 import ij.gui.Roi
 import ij.measure.Measurements
-import ij.measure.ResultsTable
 import ij.plugin.ChannelSplitter
 import ij.plugin.Duplicator
-import ij.plugin.HyperStackConverter
 import ij.plugin.ImageCalculator
 import ij.plugin.filter.BackgroundSubtracter
 import ij.plugin.filter.GaussianBlur
@@ -31,10 +30,11 @@ import ij.process.AutoThresholder
 import ij.process.FloatPolygon
 import ij.process.ImageConverter
 import ij.process.StackStatistics
+import org.apache.hadoop.hbase.util.MunkresAssignment
 
+import java.awt.Color
 import java.awt.Polygon
 import java.lang.reflect.Array
-
 
 /**
  * Created by sc13967 on 14/03/2017.
@@ -42,11 +42,11 @@ import java.lang.reflect.Array
 class Main {
     // Getting open image
     static void main(String[] args) {
-        new Main().run()
+        run()
 
     }
 
-    void run(){
+    static void run(){
         // Parameters
         def dogR = 4
 
@@ -61,17 +61,23 @@ class Main {
         def ipls = new ChannelSplitter().split(ipl)
 
         // Calculating the difference of Gaussian for the phase-contrast channel
-        def phaseSub = runDoG(ipls[1],dogR)
+        //def phaseSub = runDoG(ipls[1],dogR)
 
         // Detecting cells in the phase-contrast channel
-//         ArrayList<Cell> phaseCells = detectPhaseContrastCells(phaseSub)
+        //ArrayList<Cell> phaseCells = detectPhaseContrastCells(phaseSub)
 
         // Detecting cells in the fluorescence channel
         ArrayList<Cell> fluoCells = detectFluorescentCells(ipls[0])
 
+        // Linking phase contrast cells to tracks
+        trackCells(fluoCells)
+
+        // Displaying the tracked cells on the fluorescence channel
+        showCells(fluoCells, ipls[0])
+
     }
 
-    ImagePlus runDoG(ImagePlus ipl, double sigma) {
+    static ImagePlus runDoG(ImagePlus ipl, double sigma) {
         // Duplicating the input ImagePlus
         def ipl1 = ipl
         def ipl2 = new Duplicator().run(ipl1)
@@ -99,7 +105,7 @@ class Main {
 
     }
 
-    ArrayList<Cell> detectPhaseContrastCells(ImagePlus ipl) {
+    static ArrayList<Cell> detectPhaseContrastCells(ImagePlus ipl) {
         def model = new Model()
         model.setLogger(Logger.IJ_LOGGER)
 
@@ -141,10 +147,10 @@ class Main {
 
         }
 
-        return cells;
+        return cells
     }
 
-    ArrayList<Cell> detectFluorescentCells(ImagePlus ipl) {
+    static ArrayList<Cell> detectFluorescentCells(ImagePlus ipl) {
         // Applying basic image processing to clean up the image
         new BackgroundSubtracter().rollingBallBackground(ipl.getProcessor(),50,false,false,false,true,true)
         new GaussianBlur().blurGaussian(ipl.getProcessor(),2,2,0.01)
@@ -185,7 +191,7 @@ class Main {
             // Adding all current rois to the cell arraylist
             for (int i = 0; i < rois.count; i++) {
                 def cell = new Cell(rois.getRoi(i).polygon, PolygonRoi.POLYGON)
-                cell.setPosition(0,0,slice)
+                cell.setPosition(0,slice,slice)
                 cells.add(cell)
             }
 
@@ -196,9 +202,107 @@ class Main {
         return cells
 
     }
+
+    /**
+     * Links cells using the Munkres algorithm.
+     * @param cells
+     */
+    static void trackCells(ArrayList<Cell> cells) {
+        def maxDist = 100
+
+        // Getting the maximum frame number
+        def maxFr = 0
+        cells.each {
+            if (it.getTPosition() > maxFr) {
+                maxFr = it.getTPosition()
+            }
+        }
+
+        def trackID = 0
+
+        // Assigning new trackIDs to all cells in the first frame
+        cells.each {
+            if (it.getTPosition() == 0) {
+                it.setTrackID(trackID++)
+            }
+        }
+
+        // Going through each frame, getting the current cells and the ones from the previous frame
+        for (int fr = 2;fr < maxFr; fr++) {
+            def prevCells = new ArrayList<Cell>()
+            def currCells = new ArrayList<Cell>()
+
+            cells.each {
+                if (it.getTPosition()+1 == fr) {
+                    prevCells.add(it)
+                } else if (it.getTPosition() == fr) {
+                    currCells.add(it)
+                }
+            }
+
+            // Creating a 2D cost matrix for the overlap.  A maximum linking distance is specified, above which costs are Inf
+            def cost = new float[currCells.size()][prevCells.size()]
+            for (int curr=0;curr<cost.length;curr++) {
+                for (int prev=0;prev<cost[0].length;prev++) {
+                    def currCent = currCells.get(curr).contourCentroid
+                    def prevCent = prevCells.get(prev).contourCentroid
+
+                    def dist = Math.sqrt((prevCent[0]-currCent[0])*(prevCent[0]-currCent[0])+(prevCent[1]-currCent[1])*(prevCent[1]-currCent[1]))
+
+                    if (dist < maxDist) {
+                        cost[curr][prev] = dist
+                    } else {
+                        cost[curr][prev] = Float.MAX_VALUE
+                    }
+                }
+            }
+
+            // Running the Munkres algorithm to assign matches.
+            def assignment = new MunkresAssignment(cost).solve()
+
+            // Applying the calculated track IDs to the cells
+            for (int curr=0;curr<assignment.size();curr++) {
+                if (assignment[curr] == -1) {
+                    def currCell = currCells.get(curr)
+                    currCell.setTrackID(trackID++)
+
+                } else {
+                    def prevCell = prevCells.get(assignment[curr])
+                    def currCell = currCells.get(curr)
+                    currCell.setTrackID(prevCell.getTrackID())
+
+                }
+            }
+        }
+    }
+
+    /**
+     * Basic analysis taking cells in each frame as isolated objects.
+     * @param cells1
+     * @param cells2
+     */
+    static void compareCellPositions(ArrayList<Cell> cells1, ArrayList<Cell> cells2) {
+
+    }
+
+    static void showCells(ArrayList<Cell> cells, ImagePlus ipl) {
+        def overlay = new Overlay()
+
+        cells.each {
+            overlay.add(it)
+
+            System.out.println(it.trackID)
+            it.setStrokeColor(Color.getHSBColor(it.trackID/64, 1, 1))
+        }
+
+        ipl.setOverlay(overlay)
+        ipl.show()
+
+    }
 }
 
 class Cell extends PolygonRoi{
+    int trackID = -1
 
     Cell(int[] xPoints, int[] yPoints, int nPoints, int type) {
         super(xPoints, yPoints, nPoints, type)
@@ -222,6 +326,14 @@ class Cell extends PolygonRoi{
 
     Cell(int sx, int sy, ImagePlus imp) {
         super(sx, sy, imp)
+    }
+
+    int getTrackID() {
+        return trackID
+    }
+
+    void setTrackID(int trackID) {
+        this.trackID = trackID
     }
 }
 
