@@ -12,6 +12,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="groovy-2.4.9" level="application" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.4.10" level="project" />
     <orderEntry type="library" name="Maven: sc.fiji:fiji-lib:2.1.1" level="project" />
     <orderEntry type="library" name="Maven: net.imagej:ij:1.51g" level="project" />
     <orderEntry type="library" name="Maven: net.imagej:ij1-patcher:0.12.5" level="project" />
@@ -116,7 +117,7 @@
     <orderEntry type="module-library">
       <library name="Maven: jdk.tools:jdk.tools:1.8">
         <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_51/lib/tools.jar!/" />
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_121/lib/tools.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

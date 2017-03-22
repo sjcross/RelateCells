@@ -14,6 +14,7 @@ import fiji.plugin.trackmate.tracking.oldlap.hungarian.MunkresKuhnAlgorithm
 import ij.IJ
 import ij.ImageJ
 import ij.ImagePlus
+import ij.LookUpTable
 import ij.gui.OvalRoi
 import ij.gui.Overlay
 import ij.gui.PolygonRoi
@@ -29,11 +30,13 @@ import ij.plugin.frame.RoiManager
 import ij.process.AutoThresholder
 import ij.process.FloatPolygon
 import ij.process.ImageConverter
+import ij.process.LUT
 import ij.process.StackStatistics
 import org.apache.hadoop.hbase.util.MunkresAssignment
 
 import java.awt.Color
 import java.awt.Polygon
+import java.awt.image.IndexColorModel
 import java.lang.reflect.Array
 
 /**
@@ -170,7 +173,7 @@ class Main {
 
         // Running the threshold on each image in the stack
         for (int i=0;i<ipl.getNSlices();i++) {
-            ipl.setSlice(i)
+            ipl.setSlice(i+1)
             ipl.getProcessor().threshold(thresh)
 
         }
@@ -182,16 +185,18 @@ class Main {
 
         // Running through each slice (frame), detecting the particles
         for (int slice=0;slice<ipl.getNSlices();slice++) {
+            ipl.setSlice(slice+1)
+            ipl.getProcessor().invert()
+
             // Running analyse particles
-            def partAnal = new ParticleAnalyzer(0, Measurements.AREA | Measurements.CENTROID, null, 300, Integer.MAX_VALUE, 0, 1)
+            def partAnal = new ParticleAnalyzer(ParticleAnalyzer.EXCLUDE_EDGE_PARTICLES, Measurements.AREA | Measurements.CENTROID, null, 300, Integer.MAX_VALUE, 0, 1)
             partAnal.setRoiManager(rois)
-            ipl.setSlice(slice)
             partAnal.analyze(ipl)
 
             // Adding all current rois to the cell arraylist
             for (int i = 0; i < rois.count; i++) {
                 def cell = new Cell(rois.getRoi(i).polygon, PolygonRoi.POLYGON)
-                cell.setPosition(0,slice,slice)
+                cell.setPosition(slice+1)
                 cells.add(cell)
             }
 
@@ -213,29 +218,32 @@ class Main {
         // Getting the maximum frame number
         def maxFr = 0
         cells.each {
-            if (it.getTPosition() > maxFr) {
-                maxFr = it.getTPosition()
+            if (it.getPosition() > maxFr) {
+                maxFr = it.getPosition()
             }
         }
 
         def trackID = 0
 
+        def rand = new Random(System.currentTimeMillis())
         // Assigning new trackIDs to all cells in the first frame
         cells.each {
-            if (it.getTPosition() == 0) {
+            if (it.getPosition() == 1) {
                 it.setTrackID(trackID++)
+
+                it.setColour(Color.getHSBColor(rand.nextFloat(),1,1))
             }
         }
 
         // Going through each frame, getting the current cells and the ones from the previous frame
-        for (int fr = 2;fr < maxFr; fr++) {
+        for (int fr = 2;fr <= maxFr; fr++) {
             def prevCells = new ArrayList<Cell>()
             def currCells = new ArrayList<Cell>()
 
             cells.each {
-                if (it.getTPosition()+1 == fr) {
+                if (it.getPosition()+1 == fr) {
                     prevCells.add(it)
-                } else if (it.getTPosition() == fr) {
+                } else if (it.getPosition() == fr) {
                     currCells.add(it)
                 }
             }
@@ -265,11 +273,13 @@ class Main {
                 if (assignment[curr] == -1) {
                     def currCell = currCells.get(curr)
                     currCell.setTrackID(trackID++)
+                    currCell.setColour(Color.getHSBColor(rand.nextFloat(),1,1))
 
                 } else {
                     def prevCell = prevCells.get(assignment[curr])
                     def currCell = currCells.get(curr)
                     currCell.setTrackID(prevCell.getTrackID())
+                    currCell.setColour(prevCell.getColour())
 
                 }
             }
@@ -289,20 +299,22 @@ class Main {
         def overlay = new Overlay()
 
         cells.each {
+            System.out.println(it.getColour())
+            it.setStrokeColor(it.getColour())
             overlay.add(it)
-
-            System.out.println(it.trackID)
-            it.setStrokeColor(Color.getHSBColor(it.trackID/64, 1, 1))
+            
         }
 
         ipl.setOverlay(overlay)
         ipl.show()
+        IJ.runMacro("Grays")
 
     }
 }
 
 class Cell extends PolygonRoi{
     int trackID = -1
+    def colour = Color.getHSBColor(1,1,1)
 
     Cell(int[] xPoints, int[] yPoints, int nPoints, int type) {
         super(xPoints, yPoints, nPoints, type)
@@ -334,6 +346,14 @@ class Cell extends PolygonRoi{
 
     void setTrackID(int trackID) {
         this.trackID = trackID
+    }
+
+    def getColour() {
+        return colour
+    }
+
+    void setColour(colour) {
+        this.colour = colour
     }
 }
 
