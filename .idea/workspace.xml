@@ -2,17 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689d7b08-d713-40d2-9d09-a1bb4b0457a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/sc13967.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_23_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_tests_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop2_compat_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop_compat_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_prefix_tree_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_procedure_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_protocol_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_server_1_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16_beta2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_16_beta2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_16_beta2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__sc_fiji_StackReg__2_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__sc_fiji_TurboReg__2_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_annotations_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_tests_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop2_compat_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop_compat_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_prefix_tree_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_procedure_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_protocol_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_protocol_shaded_2_0_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_detectPhaseContrastCells_closure1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_showCells_closure5.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure2.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure3.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure4.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main$_trackCells_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Main.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_5_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_client_2_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_1_3_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_2_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_annotations_1_3_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_server_2_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_client_1_3_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RelateCells.iml" afterPath="$PROJECT_DIR$/RelateCells.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" afterPath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,18 +85,127 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
+      <file leaf-file-name="Relate_Cells.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+            <state relative-caret-position="360">
+              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
-                <element signature="e#29#64#0" expanded="true" />
-                <element signature="e#1329#1373#0" expanded="false" />
-                <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-                <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-                <element signature="e#7666#7745#0" expanded="false" />
-                <element signature="e#10497#10620#0" expanded="false" />
+                <element signature="e#1867#1911#0" expanded="false" />
+                <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#9838#9881#1" expanded="false" />
+                <element signature="e#9838#9881#0" expanded="false" />
+                <element signature="e#9838#9881#1" expanded="false" />
+                <element signature="e#12134#12311#0" expanded="false" />
+                <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#12951#13701#0" expanded="false" />
+                <element signature="e#13225#13332#0" expanded="false" />
+                <element signature="e#15524#15583#1" expanded="false" />
+                <element signature="e#15524#15583#0" expanded="false" />
+                <element signature="e#15524#15583#1" expanded="false" />
+                <element signature="e#15619#15678#1" expanded="false" />
+                <element signature="e#15619#15678#0" expanded="false" />
+                <element signature="e#15619#15678#1" expanded="false" />
+                <element signature="e#15793#16231#0" expanded="false" />
+                <element signature="e#17151#17216#1" expanded="false" />
+                <element signature="e#17151#17216#0" expanded="false" />
+                <element signature="e#17151#17216#1" expanded="false" />
+                <element signature="e#17470#17557#0" expanded="false" />
+                <element signature="e#18572#18785#0" expanded="false" />
+                <element signature="e#18929#19008#0" expanded="false" />
+                <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#19173#19283#0" expanded="false" />
+                <element signature="e#19217#19273#1" expanded="false" />
+                <element signature="e#19217#19273#0" expanded="false" />
+                <element signature="e#19217#19273#1" expanded="false" />
+                <element signature="e#19453#19631#0" expanded="false" />
+                <element signature="e#19494#19621#0" expanded="false" />
+                <element signature="e#19776#21748#0" expanded="false" />
+                <element signature="e#19902#20112#0" expanded="false" />
+                <element signature="e#19950#20007#1" expanded="false" />
+                <element signature="e#19950#20007#0" expanded="false" />
+                <element signature="e#19950#20007#1" expanded="false" />
+                <element signature="e#20041#20098#1" expanded="false" />
+                <element signature="e#20041#20098#0" expanded="false" />
+                <element signature="e#20041#20098#1" expanded="false" />
+                <element signature="e#20362#20947#0" expanded="false" />
+                <element signature="e#20424#20933#0" expanded="false" />
+                <element signature="e#20756#20827#1" expanded="false" />
+                <element signature="e#20756#20827#0" expanded="false" />
+                <element signature="e#20756#20827#1" expanded="false" />
+                <element signature="e#20833#20915#1" expanded="false" />
+                <element signature="e#20833#20915#0" expanded="false" />
+                <element signature="e#20833#20915#1" expanded="false" />
+                <element signature="e#21200#21738#0" expanded="false" />
+                <element signature="e#21246#21452#0" expanded="false" />
+                <element signature="e#21458#21724#0" expanded="false" />
+                <element signature="e#21760#21883#0" expanded="false" />
+                <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#22142#23982#0" expanded="false" />
+                <element signature="e#22284#23972#0" expanded="false" />
+                <element signature="e#22438#23958#0" expanded="false" />
+                <element signature="e#22664#22762#0" expanded="false" />
+                <element signature="e#22931#22997#0" expanded="false" />
+                <element signature="e#23003#23940#0" expanded="false" />
+                <element signature="e#23327#23918#0" expanded="false" />
+                <element signature="e#23508#23602#0" expanded="false" />
+                <element signature="e#23738#23892#0" expanded="false" />
+                <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#24171#24225#0" expanded="false" />
+                <element signature="e#24171#24225#0" expanded="false" />
+                <element signature="n#!!block;n#showCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#24381#24467#0" expanded="false" />
+                <element signature="e#24762#24848#0" expanded="false" />
+                <element signature="e#24964#25449#0" expanded="false" />
+                <element signature="e#25118#25439#0" expanded="false" />
+                <element signature="n#!!block;n#exportResults#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#25783#25942#0" expanded="false" />
+                <element signature="e#25975#26018#0" expanded="false" />
+                <element signature="e#25975#26018#0" expanded="false" />
+                <element signature="e#26041#26084#0" expanded="false" />
+                <element signature="e#26041#26084#0" expanded="false" />
+                <element signature="n#!!block;n#prepareParametersXLSX#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#28477#28826#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="e#29590#29716#0" expanded="false" />
+                <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="e#30006#30260#0" expanded="false" />
+                <element signature="e#30050#30250#0" expanded="false" />
+                <element signature="e#30182#30236#1" expanded="false" />
+                <element signature="e#30182#30236#0" expanded="false" />
+                <element signature="e#30182#30236#1" expanded="false" />
+                <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getCellID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getCellID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setCellID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setCellID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getColour#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getColour#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setColour#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#setColour#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#getLinkedCells#0;n#!!block;n#Cell#0" expanded="false" />
+                <marker date="1490290053910" expanded="false" signature="24649:25489" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -49,14 +214,22 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setS</find>
+      <find>setSli</find>
+      <find>getNSl</find>
+      <find>arg</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,8 +244,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/wolfson/RelateCells/Main.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/test.groovy" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
       </list>
     </option>
   </component>
@@ -107,7 +281,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -117,7 +291,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RelateCells" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -149,15 +365,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Groovy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java Projects/Common" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$3RD_PARTY$/Apache POI/poi-3.16-beta2/ooxml-lib" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.31755197" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RunManager" selected="Groovy.RelateCells">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -165,61 +384,6 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -345,40 +509,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -407,26 +537,9 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="RelateCells" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
@@ -465,35 +578,35 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27281946" sideWeight="0.50215286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.50441015" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27281946" sideWeight="0.49784714" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1846071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1907387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -501,7 +614,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -510,21 +623,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -533,21 +658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -556,21 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -579,21 +676,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -602,21 +685,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -625,21 +694,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -655,25 +710,178 @@
     <entry file="jar://$3RD_PARTY$/hbase-1.2.3/lib/hadoop-common-2.5.1.jar!/org/apache/hadoop/util/Daemon.class" />
     <entry file="jar://$3RD_PARTY$/hbase-1.2.3/lib/hbase-client-1.2.3.jar!/org/apache/hadoop/hbase/util/JsonMapper.class" />
     <entry file="jar://$3RD_PARTY$/hbase-1.2.3/lib/hbase-server-1.2.3.jar!/org/apache/hadoop/hbase/util/MunkresAssignment.class" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCResultCollection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy">
+    <entry file="jar://$MAVEN_REPOSITORY$/sc/fiji/StackReg_/2.0.0/StackReg_-2.0.0.jar!/plugins.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCParameterExtractor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCFilenameGenerator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/sc/fiji/StackReg_/2.0.0/StackReg_-2.0.0.jar!/StackReg_.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#29#64#0" expanded="true" />
-            <element signature="e#1329#1373#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Main#0" expanded="false" />
-            <element signature="e#7666#7745#0" expanded="false" />
-            <element signature="e#10497#10620#0" expanded="false" />
+            <element signature="e#0#70565#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="e#1867#1911#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#9838#9881#1" expanded="false" />
+            <element signature="e#9838#9881#0" expanded="false" />
+            <element signature="e#9838#9881#1" expanded="false" />
+            <element signature="e#12134#12311#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12951#13701#0" expanded="false" />
+            <element signature="e#13225#13332#0" expanded="false" />
+            <element signature="e#15524#15583#1" expanded="false" />
+            <element signature="e#15524#15583#0" expanded="false" />
+            <element signature="e#15524#15583#1" expanded="false" />
+            <element signature="e#15619#15678#1" expanded="false" />
+            <element signature="e#15619#15678#0" expanded="false" />
+            <element signature="e#15619#15678#1" expanded="false" />
+            <element signature="e#15793#16231#0" expanded="false" />
+            <element signature="e#17151#17216#1" expanded="false" />
+            <element signature="e#17151#17216#0" expanded="false" />
+            <element signature="e#17151#17216#1" expanded="false" />
+            <element signature="e#17470#17557#0" expanded="false" />
+            <element signature="e#18572#18785#0" expanded="false" />
+            <element signature="e#18929#19008#0" expanded="false" />
+            <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19173#19283#0" expanded="false" />
+            <element signature="e#19217#19273#1" expanded="false" />
+            <element signature="e#19217#19273#0" expanded="false" />
+            <element signature="e#19217#19273#1" expanded="false" />
+            <element signature="e#19453#19631#0" expanded="false" />
+            <element signature="e#19494#19621#0" expanded="false" />
+            <element signature="e#19776#21748#0" expanded="false" />
+            <element signature="e#19902#20112#0" expanded="false" />
+            <element signature="e#19950#20007#1" expanded="false" />
+            <element signature="e#19950#20007#0" expanded="false" />
+            <element signature="e#19950#20007#1" expanded="false" />
+            <element signature="e#20041#20098#1" expanded="false" />
+            <element signature="e#20041#20098#0" expanded="false" />
+            <element signature="e#20041#20098#1" expanded="false" />
+            <element signature="e#20362#20947#0" expanded="false" />
+            <element signature="e#20424#20933#0" expanded="false" />
+            <element signature="e#20756#20827#1" expanded="false" />
+            <element signature="e#20756#20827#0" expanded="false" />
+            <element signature="e#20756#20827#1" expanded="false" />
+            <element signature="e#20833#20915#1" expanded="false" />
+            <element signature="e#20833#20915#0" expanded="false" />
+            <element signature="e#20833#20915#1" expanded="false" />
+            <element signature="e#21200#21738#0" expanded="false" />
+            <element signature="e#21246#21452#0" expanded="false" />
+            <element signature="e#21458#21724#0" expanded="false" />
+            <element signature="e#21760#21883#0" expanded="false" />
+            <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#22142#23982#0" expanded="false" />
+            <element signature="e#22284#23972#0" expanded="false" />
+            <element signature="e#22438#23958#0" expanded="false" />
+            <element signature="e#22664#22762#0" expanded="false" />
+            <element signature="e#22931#22997#0" expanded="false" />
+            <element signature="e#23003#23940#0" expanded="false" />
+            <element signature="e#23327#23918#0" expanded="false" />
+            <element signature="e#23508#23602#0" expanded="false" />
+            <element signature="e#23738#23892#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#24171#24225#0" expanded="false" />
+            <element signature="e#24171#24225#0" expanded="false" />
+            <element signature="n#!!block;n#showCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#24381#24467#0" expanded="false" />
+            <element signature="e#24762#24848#0" expanded="false" />
+            <element signature="e#24964#25449#0" expanded="false" />
+            <element signature="e#25118#25439#0" expanded="false" />
+            <element signature="n#!!block;n#exportResults#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#25783#25942#0" expanded="false" />
+            <element signature="e#25975#26018#0" expanded="false" />
+            <element signature="e#25975#26018#0" expanded="false" />
+            <element signature="e#26041#26084#0" expanded="false" />
+            <element signature="e#26041#26084#0" expanded="false" />
+            <element signature="n#!!block;n#prepareParametersXLSX#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#28477#28826#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#29590#29716#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#30006#30260#0" expanded="false" />
+            <element signature="e#30050#30250#0" expanded="false" />
+            <element signature="e#30182#30236#1" expanded="false" />
+            <element signature="e#30182#30236#0" expanded="false" />
+            <element signature="e#30182#30236#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getCellID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getCellID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setCellID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setCellID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setTrackID#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getColour#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getColour#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setColour#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#setColour#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#getLinkedCells#0;n#!!block;n#Cell#0" expanded="false" />
+            <marker date="1490290053910" expanded="false" signature="24649:25489" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -736,6 +944,7 @@
             <option name="proportions">
               <list>
                 <option value="0.31755197" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
