@@ -1,3 +1,6 @@
+// TODO: Filter for TrackMate tracks with a mean intenisty ~0 (those found in the image border following registration)
+
+
 import fiji.plugin.trackmate.Logger
 import fiji.plugin.trackmate.Model
 import fiji.plugin.trackmate.Settings
@@ -5,11 +8,11 @@ import fiji.plugin.trackmate.Spot
 import fiji.plugin.trackmate.TrackMate
 import fiji.plugin.trackmate.detection.DetectorKeys
 import fiji.plugin.trackmate.detection.LogDetectorFactory
+import fiji.plugin.trackmate.gui.descriptors.SpotFilterDescriptor
 import fiji.plugin.trackmate.tracking.LAPUtils
 import fiji.plugin.trackmate.tracking.TrackerKeys
 import fiji.plugin.trackmate.tracking.oldlap.SimpleLAPTrackerFactory
 import ij.IJ
-import ij.ImageJ
 import ij.ImagePlus
 import ij.gui.GenericDialog
 import ij.gui.Line
@@ -25,12 +28,12 @@ import ij.plugin.RGBStackMerge
 import ij.plugin.filter.BackgroundSubtracter
 import ij.plugin.filter.GaussianBlur
 import ij.plugin.filter.ParticleAnalyzer
-import ij.plugin.frame.PlugInFrame
 import ij.plugin.frame.RoiManager
 import ij.process.AutoThresholder
 import ij.process.FloatPolygon
 import ij.process.ImageConverter
 import ij.process.StackConverter
+import ij.process.StackProcessor
 import ij.process.StackStatistics
 import org.apache.hadoop.hbase.util.MunkresAssignment
 import org.apache.poi.ss.usermodel.Row
@@ -62,9 +65,8 @@ class Relate_Cells {
     }
 
     void run() {
-//        // Starting ImageJ
-//        new ImageJ()
-//        IJ.runMacro("waitForUser")
+        // Starting ImageJ
+        //new ImageJ()
 
         // Getting parameters via a generic dialog
         def params = getParameters()
@@ -118,37 +120,17 @@ class Relate_Cells {
             IJ.log("        Well: "+result.well)
             IJ.log("        Field: "+result.field)
 
-            // Getting the filename for the corresponding phase-contrast image
-            def phFilename = HCFilenameGenerator.generateIncuCyteShortFile("PH",result.well,result.field,result.ext)
+            // Loading current image stack
+            def ipl = loadImages(file, result)
 
-            // Creating structure to hold both image stacks
-            def ipls = new ImagePlus[2]
-
-            // Loading the current fluorescence channel file to ImageJ
-            IJ.log("    Loading fluorescence image stack ("+file.name+")")
-            ipls[0] = IJ.openImage(file.absolutePath)
-
-            // Loading the current phase-contrast channel file to ImageJ
-            IJ.log("    Loading phase-contrast image stack ("+phFilename+")")
-            ipls[1] = IJ.openImage(file.getParentFile().absolutePath+"\\"+phFilename)
-
-            // Combining the two images for stack registration
-            IJ.log("    Creating composite image")
-            def ipl = RGBStackMerge.mergeChannels(ipls,false)
-            new StackConverter(ipl).convertToRGB()
+            // Running stack alignment
+            ipl = runDriftCorrection(ipl,params)
             ipl.show()
-
-            // Running stack registration
-            IJ.log("    Running stack registration")
-            IJ.runMacro("StackReg ","transformation=Translation")
-//            IJ.runPlugIn(ipl,"StackReg_","Translation")
-            //new StackReg_().run("transformation=Translation")
             ipl.updateAndDraw()
 
-
-//            // Running the cell relation process
-//            def result = runRelation(ipl, params)
-//            results.add(result)
+            // Running the cell relation process
+            runRelation(ipl, params, result)
+            results.add(result)
 
             // Loading the next valid file
             file = fileCrawler.getNextValidFileInStructure()
@@ -162,6 +144,9 @@ class Relate_Cells {
 
     static HashMap<String,Object> getParameters() {
         GenericDialog gd = new GenericDialog("Parameters")
+        gd.addMessage("GENERAL:")
+        gd.addNumericField("Border width (%): ",5,0)
+        gd.addMessage(" ")
         gd.addMessage("FLUORESCENCE CHANNEL:")
         gd.addNumericField("DoG filter radius (px): ", 4, 1)
         gd.addNumericField(" Max. edge-edge distance (px): ", 20, 1)
@@ -182,6 +167,7 @@ class Relate_Cells {
 
         // Parameters
         HashMap<String,Object> params = new HashMap<String, Object>()
+        params.put("Border_width",(double) gd.getNextNumber()) // Percentage width of the border following drift correction
         params.put("DoG_Radius",(double) gd.getNextNumber()) // Radius for smaller Gaussian blur in DoG filtering (larger is 1.6*dogR)
         params.put("Max_Link_Threshold",(double) gd.getNextNumber()) // Distance in px from one cell boundary to the other
         params.put("Centroid_Link_Threshold",(double) gd.getNextNumber()) // Centroid distance for accurate edge-edge distance to be calculated
@@ -207,7 +193,7 @@ class Relate_Cells {
 
     static File getRootFolder() {
         // Opening the file dialog.  Only directories can be selected
-        def openFileDialog = new JFileChooser()
+        def openFileDialog = new JFileChooser("C:\\Users\\sc13967\\Google Drive\\People\\H\\Lea Hampton-O'Neil\\2017-03-07 Cell association (Incucyte)\\Batch data\\Crop")
         openFileDialog.setDialogTitle("Select the root folder")
         openFileDialog.setMultiSelectionEnabled(false)
         openFileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY)
@@ -231,43 +217,94 @@ class Relate_Cells {
 
     }
 
-    HCResult runRelation(ImagePlus ipl, HashMap<String,Object> params) {
+    static ImagePlus loadImages(File file, HCResult result) {
+        // Getting the filename for the corresponding phase-contrast image
+        def phFilename = HCFilenameGenerator.generateIncuCyteShortFile("PH",result.well,result.field,result.ext)
+
+        // Creating structure to hold both image stacks
+        def ipls = new ImagePlus[2]
+
+        // Loading the current fluorescence channel file to ImageJ
+        IJ.log("    Loading fluorescence image stack ("+file.name+")")
+        ipls[0] = IJ.openImage(file.absolutePath)
+
+        // Loading the current phase-contrast channel file to ImageJ
+        IJ.log("    Loading phase-contrast image stack ("+phFilename+")")
+        ipls[1] = IJ.openImage(file.getParentFile().absolutePath+"\\"+phFilename)
+
+        // Combining the two images for stack registration
+        IJ.log("    Creating composite image")
+        def ipl = RGBStackMerge.mergeChannels(ipls,false)
+
         // Converting ImagePlus to time-based if there are more slices than frames and the number of frames is 1
-        IJ.log("Converting image format")
         if (ipl.getNSlices() > 1 & ipl.getNFrames() == 1) {
             switchTimeAndZ(ipl)
         }
 
+        return ipl
+
+    }
+
+    static ImagePlus runDriftCorrection(ImagePlus ipl, HashMap<String,Object> params) {
+        new StackConverter(ipl).convertToRGB()
+
+        // Running stack registration
+        IJ.log("    Aligning image stack using StackReg")
+        ipl.setT(ipl.getNFrames())
+        IJ.run(ipl,"StackReg","transformation=Translation")
+
+        //Converting back to a composite image
+        def ipls = new ChannelSplitter().split(ipl)
+        ImagePlus[] ipls2 = [ipls[0],ipls[1]]
+        ipl = RGBStackMerge.mergeChannels(ipls2,false)
+
+        // Cropping the image to the central region
+        def borderFrac = (double) params.get("Border_width")/100
+        def w = ipl.getWidth()
+        def h = ipl.getHeight()
+        def ist = new StackProcessor(ipl.getStack()).crop((w*borderFrac).intValue(),(h*borderFrac).intValue(),(w*(1-2*borderFrac)).intValue(),(h*(1-2*borderFrac)).intValue())
+        ipl.setStack(ist)
+
+        // Converting ImagePlus to time-based if there are more slices than frames and the number of frames is 1
+        if (ipl.getNSlices() > 1 & ipl.getNFrames() == 1) {
+            switchTimeAndZ(ipl)
+        }
+
+        return ipl
+
+    }
+
+    HCResult runRelation(ImagePlus ipl, HashMap<String,Object> params, HCResult result) {
         // Getting the separate channels
-        IJ.log("Splitting channels")
+//        IJ.log("Splitting channels")
         def ipls = new ChannelSplitter().split(ipl)
 
         // Calculating the difference of Gaussian for the phase-contrast channel
-        IJ.log("Running DoG filter on phase-contrast channel")
+        IJ.log("    Running DoG filter on phase-contrast channel")
         def phaseIpl = runDoG(ipls[1],(double) params.get("DoG_Radius"))
 
         // Creating a separate image to perform fluorescence operations on
-        IJ.log("Duplicating fluorescence channel")
+        IJ.log("    Duplicating fluorescence channel")
         def fluorIpl = new Duplicator().run(ipls[0])
 
         // Detecting cells in the phase-contrast channel
-        IJ.log("Detecting cells in phase-contrast channel using TrackMate")
+        IJ.log("    Detecting cells in phase-contrast channel using TrackMate")
         ArrayList<Cell> phCells = detectPhaseContrastCells(phaseIpl, params)
 
         // Detecting cells in the fluorescence channel
-        IJ.log("Detecting cells in fluorescence channel")
+        IJ.log("    Detecting cells in fluorescence channel")
         ArrayList<Cell> flCells = detectFluorescentCells(fluorIpl, params)
 
         // Linking phase contrast cells to tracks
-        IJ.log("Tracking cells in fluorescence channel using Apache HBase (MunkresAssignment)")
+        IJ.log("    Tracking cells in fluorescence channel using Apache HBase (MunkresAssignment)")
         trackCells(flCells)
 
         // Linking phase channel cells to fluorescence channel cells
-        IJ.log("Linking fluorescence and phase-contrast cells")
+        IJ.log("    Linking fluorescence and phase-contrast cells")
         compareCellPositions(phCells, flCells, (double) params.get("Max_Link_Threshold"), (double) params.get("Centroid_Link_Threshold"))
 
         // Calculating number of phase cells per frame
-        IJ.log("Calculating number of cells per frame in phase-contrast channel")
+        IJ.log("    Calculating number of cells per frame in phase-contrast channel")
         def phCellsPerFrame = measureNumCellsPerFrame(phCells, ipl.getNFrames())
 
         // Displaying the tracked cells on the fluorescence channel
