@@ -75,5 +75,10 @@
             <artifactId>Common</artifactId>
             <version>LATEST</version>
         </dependency>
+        <dependency>
+            <groupId>wolfson</groupId>
+            <artifactId>ImageJOps</artifactId>
+            <version>LATEST</version>
+        </dependency>
     </dependencies>
 </project>

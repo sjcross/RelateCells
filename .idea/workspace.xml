@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689d7b08-d713-40d2-9d09-a1bb4b0457a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Cell.class" afterPath="$PROJECT_DIR$/target/classes/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_detectPhaseContrastCells_closure1.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_detectPhaseContrastCells_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_measureNumCellsPerFrame_closure5.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_measureNumCellsPerFrame_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareParametersXLSX_closure10.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareParametersXLSX_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareResults_closure9.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareResults_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showCells_closure6.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_showCells_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure7.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure8.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure2.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure3.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure4.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells.class" afterPath="$PROJECT_DIR$/target/classes/Relate_Cells.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mcib3d_mcib3d_core_3_81.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_quickhull3d_quickhull3d_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_combinatoricslib_combinatoricslib_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__weka_weka_3_7_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_7a.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_ImageJOps_1_1_2_DEV.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Cell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_detectPhaseContrastCells_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_measureNumCellsPerFrame_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareParametersXLSX_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_prepareResults_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showCells_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_showLinkedCells_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells$_trackCells_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Relate_Cells.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/sc13967.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/sc13967.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RelateCells.iml" afterPath="$PROJECT_DIR$/RelateCells.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" afterPath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,69 +46,129 @@
       <file leaf-file-name="Relate_Cells.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="734" column="48" lean-forward="true" selection-start-line="734" selection-start-column="48" selection-end-line="734" selection-end-column="48" />
               <folding>
-                <element signature="e#121#156#0" expanded="true" />
-                <element signature="e#2035#2079#0" expanded="false" />
+                <element signature="e#2626#2670#0" expanded="false" />
+                <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#2891#2909#0" expanded="false" />
+                <element signature="e#3031#3143#0" expanded="false" />
                 <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#13653#13830#0" expanded="false" />
+                <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#11160#11203#1" expanded="false" />
+                <element signature="e#11160#11203#0" expanded="false" />
+                <element signature="e#11160#11203#1" expanded="false" />
+                <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#12314#12357#1" expanded="false" />
+                <element signature="e#12314#12357#0" expanded="false" />
+                <element signature="e#12314#12357#1" expanded="false" />
+                <element signature="e#14745#14922#0" expanded="false" />
                 <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#14470#15220#0" expanded="false" />
-                <element signature="e#17043#17102#0" expanded="false" />
-                <element signature="e#17138#17197#0" expanded="false" />
-                <element signature="e#17312#17750#0" expanded="false" />
-                <element signature="e#18670#18735#0" expanded="false" />
-                <element signature="e#18989#19076#0" expanded="false" />
-                <element signature="e#20091#20304#0" expanded="false" />
-                <element signature="e#20448#20527#0" expanded="false" />
+                <element signature="e#15562#16312#0" expanded="false" />
+                <element signature="e#15836#15943#0" expanded="false" />
+                <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#18212#18271#1" expanded="false" />
+                <element signature="e#18212#18271#1" expanded="false" />
+                <element signature="e#18439#18476#0" expanded="false" />
+                <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+                <element signature="e#19505#19561#0" expanded="false" />
+                <element signature="e#19674#19976#0" expanded="false" />
+                <element signature="e#20296#20361#1" expanded="false" />
+                <element signature="e#20296#20361#0" expanded="false" />
+                <element signature="e#20296#20361#1" expanded="false" />
+                <element signature="e#20674#20761#0" expanded="false" />
+                <element signature="e#21120#22098#0" expanded="false" />
+                <element signature="e#21320#21379#1" expanded="false" />
+                <element signature="e#21320#21379#0" expanded="false" />
+                <element signature="e#21320#21379#1" expanded="false" />
+                <element signature="e#21776#21989#0" expanded="false" />
+                <element signature="e#22133#22296#0" expanded="false" />
                 <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#20692#20802#0" expanded="false" />
-                <element signature="e#20736#20792#0" expanded="false" />
-                <element signature="e#20972#21150#0" expanded="false" />
-                <element signature="e#21013#21140#0" expanded="false" />
-                <element signature="e#21295#23267#0" expanded="false" />
-                <element signature="e#21421#21631#0" expanded="false" />
-                <element signature="e#21469#21526#0" expanded="false" />
-                <element signature="e#21560#21617#0" expanded="false" />
-                <element signature="e#21881#22466#0" expanded="false" />
-                <element signature="e#21943#22452#0" expanded="false" />
-                <element signature="e#22275#22346#0" expanded="false" />
-                <element signature="e#22352#22434#0" expanded="false" />
-                <element signature="e#22719#23257#0" expanded="false" />
-                <element signature="e#22765#22971#0" expanded="false" />
-                <element signature="e#22977#23243#0" expanded="false" />
-                <element signature="e#23279#23402#0" expanded="false" />
+                <element signature="e#22550#22660#0" expanded="false" />
+                <element signature="e#22594#22650#1" expanded="false" />
+                <element signature="e#22594#22650#0" expanded="false" />
+                <element signature="e#22594#22650#1" expanded="false" />
+                <element signature="e#22830#23365#0" expanded="false" />
+                <element signature="e#22871#23355#0" expanded="false" />
+                <element signature="e#23510#26105#0" expanded="false" />
+                <element signature="e#23636#23846#0" expanded="false" />
+                <element signature="e#23684#23741#1" expanded="false" />
+                <element signature="e#23684#23741#0" expanded="false" />
+                <element signature="e#23684#23741#1" expanded="false" />
+                <element signature="e#23775#23832#1" expanded="false" />
+                <element signature="e#23775#23832#0" expanded="false" />
+                <element signature="e#23775#23832#1" expanded="false" />
+                <element signature="e#24096#24681#0" expanded="false" />
+                <element signature="e#24158#24667#0" expanded="false" />
+                <element signature="e#24490#24561#1" expanded="false" />
+                <element signature="e#24490#24561#0" expanded="false" />
+                <element signature="e#24490#24561#1" expanded="false" />
+                <element signature="e#24567#24649#1" expanded="false" />
+                <element signature="e#24567#24649#0" expanded="false" />
+                <element signature="e#24567#24649#1" expanded="false" />
+                <element signature="e#24934#26095#0" expanded="false" />
+                <element signature="e#24980#25580#0" expanded="false" />
+                <element signature="e#25586#26081#0" expanded="false" />
+                <element signature="e#26141#26264#0" expanded="false" />
                 <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#23661#25501#0" expanded="false" />
-                <element signature="e#23803#25491#0" expanded="false" />
-                <element signature="e#23957#25477#0" expanded="false" />
-                <element signature="e#24450#24516#0" expanded="false" />
-                <element signature="e#24522#25459#0" expanded="false" />
-                <element signature="e#24846#25437#0" expanded="false" />
-                <element signature="e#25257#25411#0" expanded="false" />
+                <element signature="e#26523#28363#0" expanded="false" />
+                <element signature="e#26665#28353#0" expanded="false" />
+                <element signature="e#26819#28339#0" expanded="false" />
+                <element signature="e#27045#27143#0" expanded="false" />
+                <element signature="e#27312#27378#0" expanded="false" />
+                <element signature="e#27384#28321#0" expanded="false" />
+                <element signature="e#27708#28299#0" expanded="false" />
+                <element signature="e#27889#27983#0" expanded="false" />
+                <element signature="e#28119#28273#0" expanded="false" />
                 <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="n#!!block;n#showCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#25900#25986#0" expanded="false" />
-                <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#26281#26367#0" expanded="false" />
-                <element signature="e#26483#26968#0" expanded="false" />
-                <element signature="e#26637#26958#0" expanded="false" />
-                <element signature="n#!!block;n#exportResults#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#27302#27461#0" expanded="false" />
-                <element signature="n#!!block;n#prepareParametersXLSX#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#29996#30345#0" expanded="false" />
+                <element signature="e#28552#28606#0" expanded="false" />
+                <element signature="e#28552#28606#0" expanded="false" />
+                <element signature="e#30317#30428#0" expanded="false" />
+                <element signature="e#31894#31977#1" expanded="false" />
+                <element signature="e#31894#31977#0" expanded="false" />
+                <element signature="e#31894#31977#1" expanded="false" />
+                <element signature="e#31983#32051#1" expanded="false" />
+                <element signature="e#31983#32051#0" expanded="false" />
+                <element signature="e#31983#32051#1" expanded="false" />
                 <element signature="n#!!block;n#Cell#0" expanded="false" />
-                <element signature="e#31109#31235#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="e#36096#36222#0" expanded="false" />
                 <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-                <element signature="e#31525#31779#0" expanded="false" />
-                <element signature="e#31569#31769#0" expanded="false" />
-                <element signature="e#31701#31755#0" expanded="false" />
-                <element signature="n#!!block;n#getLinkedCells#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="e#36512#36766#0" expanded="false" />
+                <element signature="e#36556#36756#0" expanded="false" />
+                <element signature="e#36688#36742#1" expanded="false" />
+                <element signature="e#36688#36742#0" expanded="false" />
+                <element signature="e#36688#36742#1" expanded="false" />
+                <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+                <element signature="n#!!block;n#Result#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,6 +184,9 @@
       <find>show</find>
       <find>show()</find>
       <find>RoiMana</find>
+      <find>Visual</find>
+      <find>rgb</find>
+      <find>subhy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,6 +241,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,24 +252,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelateCells" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: sc.fiji:StackReg_:2.0.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackReg_-2.0.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -267,18 +324,29 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Groovy" />
-    <property name="last_opened_file_path" value="$3RD_PARTY$/Apache POI/poi-3.16-beta2/ooxml-lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java Projects/ImageJOps" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.31755197" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Groovy.RelateCells">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -475,22 +543,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.50441015" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1907387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16538037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2012128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -498,17 +572,11 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -516,7 +584,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -530,65 +598,485 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#121#156#0" expanded="true" />
-            <element signature="e#2035#2079#0" expanded="false" />
+            <element signature="e#2626#2670#0" expanded="false" />
+            <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#2891#2909#0" expanded="false" />
+            <element signature="e#3031#3143#0" expanded="false" />
             <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#13653#13830#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="e#11160#11203#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#12314#12357#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#14745#14922#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14470#15220#0" expanded="false" />
-            <element signature="e#17043#17102#0" expanded="false" />
-            <element signature="e#17138#17197#0" expanded="false" />
-            <element signature="e#17312#17750#0" expanded="false" />
-            <element signature="e#18670#18735#0" expanded="false" />
-            <element signature="e#18989#19076#0" expanded="false" />
-            <element signature="e#20091#20304#0" expanded="false" />
-            <element signature="e#20448#20527#0" expanded="false" />
+            <element signature="e#15562#16312#0" expanded="false" />
+            <element signature="e#15836#15943#0" expanded="false" />
+            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18439#18476#0" expanded="false" />
+            <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19505#19561#0" expanded="false" />
+            <element signature="e#19674#19976#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20296#20361#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20674#20761#0" expanded="false" />
+            <element signature="e#21120#22098#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21320#21379#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21776#21989#0" expanded="false" />
+            <element signature="e#22133#22296#0" expanded="false" />
             <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#20692#20802#0" expanded="false" />
-            <element signature="e#20736#20792#0" expanded="false" />
-            <element signature="e#20972#21150#0" expanded="false" />
-            <element signature="e#21013#21140#0" expanded="false" />
-            <element signature="e#21295#23267#0" expanded="false" />
-            <element signature="e#21421#21631#0" expanded="false" />
-            <element signature="e#21469#21526#0" expanded="false" />
-            <element signature="e#21560#21617#0" expanded="false" />
-            <element signature="e#21881#22466#0" expanded="false" />
-            <element signature="e#21943#22452#0" expanded="false" />
-            <element signature="e#22275#22346#0" expanded="false" />
-            <element signature="e#22352#22434#0" expanded="false" />
-            <element signature="e#22719#23257#0" expanded="false" />
-            <element signature="e#22765#22971#0" expanded="false" />
-            <element signature="e#22977#23243#0" expanded="false" />
-            <element signature="e#23279#23402#0" expanded="false" />
+            <element signature="e#22550#22660#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22594#22650#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22830#23365#0" expanded="false" />
+            <element signature="e#22871#23355#0" expanded="false" />
+            <element signature="e#23510#26105#0" expanded="false" />
+            <element signature="e#23636#23846#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23684#23741#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#23775#23832#0" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#24096#24681#0" expanded="false" />
+            <element signature="e#24158#24667#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24490#24561#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24567#24649#0" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24934#26095#0" expanded="false" />
+            <element signature="e#24980#25580#0" expanded="false" />
+            <element signature="e#25586#26081#0" expanded="false" />
+            <element signature="e#26141#26264#0" expanded="false" />
             <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#23661#25501#0" expanded="false" />
-            <element signature="e#23803#25491#0" expanded="false" />
-            <element signature="e#23957#25477#0" expanded="false" />
-            <element signature="e#24450#24516#0" expanded="false" />
-            <element signature="e#24522#25459#0" expanded="false" />
-            <element signature="e#24846#25437#0" expanded="false" />
-            <element signature="e#25257#25411#0" expanded="false" />
+            <element signature="e#26523#28363#0" expanded="false" />
+            <element signature="e#26665#28353#0" expanded="false" />
+            <element signature="e#26819#28339#0" expanded="false" />
+            <element signature="e#27045#27143#0" expanded="false" />
+            <element signature="e#27312#27378#0" expanded="false" />
+            <element signature="e#27384#28321#0" expanded="false" />
+            <element signature="e#27708#28299#0" expanded="false" />
+            <element signature="e#27889#27983#0" expanded="false" />
+            <element signature="e#28119#28273#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#25900#25986#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#26281#26367#0" expanded="false" />
-            <element signature="e#26483#26968#0" expanded="false" />
-            <element signature="e#26637#26958#0" expanded="false" />
-            <element signature="n#!!block;n#exportResults#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#27302#27461#0" expanded="false" />
-            <element signature="n#!!block;n#prepareParametersXLSX#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#29996#30345#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#30317#30428#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31894#31977#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="e#31983#32051#0" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
             <element signature="n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#31109#31235#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36096#36222#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#31525#31779#0" expanded="false" />
-            <element signature="e#31569#31769#0" expanded="false" />
-            <element signature="e#31701#31755#0" expanded="false" />
-            <element signature="n#!!block;n#getLinkedCells#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36512#36766#0" expanded="false" />
+            <element signature="e#36556#36756#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="e#36688#36742#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Result#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="47" lean-forward="false" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="447" column="60" lean-forward="false" selection-start-line="447" selection-start-column="60" selection-end-line="447" selection-end-column="60" />
+          <folding>
+            <element signature="e#2626#2670#0" expanded="false" />
+            <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#2891#2909#0" expanded="false" />
+            <element signature="e#3031#3143#0" expanded="false" />
+            <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="e#11160#11203#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#12314#12357#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#14745#14922#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#15562#16312#0" expanded="false" />
+            <element signature="e#15836#15943#0" expanded="false" />
+            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18439#18476#0" expanded="false" />
+            <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19505#19561#0" expanded="false" />
+            <element signature="e#19674#19976#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20296#20361#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20674#20761#0" expanded="false" />
+            <element signature="e#21120#22098#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21320#21379#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21776#21989#0" expanded="false" />
+            <element signature="e#22133#22296#0" expanded="false" />
+            <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#22550#22660#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22594#22650#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22830#23365#0" expanded="false" />
+            <element signature="e#22871#23355#0" expanded="false" />
+            <element signature="e#23510#26105#0" expanded="false" />
+            <element signature="e#23636#23846#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23684#23741#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#23775#23832#0" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#24096#24681#0" expanded="false" />
+            <element signature="e#24158#24667#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24490#24561#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24567#24649#0" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24934#26095#0" expanded="false" />
+            <element signature="e#24980#25580#0" expanded="false" />
+            <element signature="e#25586#26081#0" expanded="false" />
+            <element signature="e#26141#26264#0" expanded="false" />
+            <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#26523#28363#0" expanded="false" />
+            <element signature="e#26665#28353#0" expanded="false" />
+            <element signature="e#26819#28339#0" expanded="false" />
+            <element signature="e#27045#27143#0" expanded="false" />
+            <element signature="e#27312#27378#0" expanded="false" />
+            <element signature="e#27384#28321#0" expanded="false" />
+            <element signature="e#27708#28299#0" expanded="false" />
+            <element signature="e#27889#27983#0" expanded="false" />
+            <element signature="e#28119#28273#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#30317#30428#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31894#31977#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="e#31983#32051#0" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36096#36222#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36512#36766#0" expanded="false" />
+            <element signature="e#36556#36756#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="e#36688#36742#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Result#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2626#2670#0" expanded="false" />
+            <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#2891#2909#0" expanded="false" />
+            <element signature="e#3031#3143#0" expanded="false" />
+            <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="e#11160#11203#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#12314#12357#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#14745#14922#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#15562#16312#0" expanded="false" />
+            <element signature="e#15836#15943#0" expanded="false" />
+            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18439#18476#0" expanded="false" />
+            <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19505#19561#0" expanded="false" />
+            <element signature="e#19674#19976#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20296#20361#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20674#20761#0" expanded="false" />
+            <element signature="e#21120#22098#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21320#21379#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21776#21989#0" expanded="false" />
+            <element signature="e#22133#22296#0" expanded="false" />
+            <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#22550#22660#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22594#22650#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22830#23365#0" expanded="false" />
+            <element signature="e#22871#23355#0" expanded="false" />
+            <element signature="e#23510#26105#0" expanded="false" />
+            <element signature="e#23636#23846#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23684#23741#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#23775#23832#0" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#24096#24681#0" expanded="false" />
+            <element signature="e#24158#24667#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24490#24561#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24567#24649#0" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24934#26095#0" expanded="false" />
+            <element signature="e#24980#25580#0" expanded="false" />
+            <element signature="e#25586#26081#0" expanded="false" />
+            <element signature="e#26141#26264#0" expanded="false" />
+            <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#26523#28363#0" expanded="false" />
+            <element signature="e#26665#28353#0" expanded="false" />
+            <element signature="e#26819#28339#0" expanded="false" />
+            <element signature="e#27045#27143#0" expanded="false" />
+            <element signature="e#27312#27378#0" expanded="false" />
+            <element signature="e#27384#28321#0" expanded="false" />
+            <element signature="e#27708#28299#0" expanded="false" />
+            <element signature="e#27889#27983#0" expanded="false" />
+            <element signature="e#28119#28273#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#30317#30428#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31894#31977#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="e#31983#32051#0" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36096#36222#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36512#36766#0" expanded="false" />
+            <element signature="e#36556#36756#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="e#36688#36742#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Result#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2626#2670#0" expanded="false" />
+            <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#2891#2909#0" expanded="false" />
+            <element signature="e#3031#3143#0" expanded="false" />
+            <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="e#11160#11203#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#12314#12357#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#14745#14922#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#15562#16312#0" expanded="false" />
+            <element signature="e#15836#15943#0" expanded="false" />
+            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18439#18476#0" expanded="false" />
+            <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19505#19561#0" expanded="false" />
+            <element signature="e#19674#19976#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20296#20361#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20674#20761#0" expanded="false" />
+            <element signature="e#21120#22098#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21320#21379#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21776#21989#0" expanded="false" />
+            <element signature="e#22133#22296#0" expanded="false" />
+            <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#22550#22660#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22594#22650#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22830#23365#0" expanded="false" />
+            <element signature="e#22871#23355#0" expanded="false" />
+            <element signature="e#23510#26105#0" expanded="false" />
+            <element signature="e#23636#23846#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23684#23741#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#23775#23832#0" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#24096#24681#0" expanded="false" />
+            <element signature="e#24158#24667#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24490#24561#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24567#24649#0" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24934#26095#0" expanded="false" />
+            <element signature="e#24980#25580#0" expanded="false" />
+            <element signature="e#25586#26081#0" expanded="false" />
+            <element signature="e#26141#26264#0" expanded="false" />
+            <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#26523#28363#0" expanded="false" />
+            <element signature="e#26665#28353#0" expanded="false" />
+            <element signature="e#26819#28339#0" expanded="false" />
+            <element signature="e#27045#27143#0" expanded="false" />
+            <element signature="e#27312#27378#0" expanded="false" />
+            <element signature="e#27384#28321#0" expanded="false" />
+            <element signature="e#27708#28299#0" expanded="false" />
+            <element signature="e#27889#27983#0" expanded="false" />
+            <element signature="e#28119#28273#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#30317#30428#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31894#31977#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="e#31983#32051#0" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36096#36222#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36512#36766#0" expanded="false" />
+            <element signature="e#36556#36756#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="e#36688#36742#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Result#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -707,20 +1195,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Fiji.app/plugins/StackReg_-2.0.0/StackReg_.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Fiji.app/plugins/StackReg_-2.0.0/StackReg_.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/jre/lib/rt.jar!/sun/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -728,70 +1203,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+        <state relative-caret-position="370">
+          <caret line="734" column="48" lean-forward="true" selection-start-line="734" selection-start-column="48" selection-end-line="734" selection-end-column="48" />
           <folding>
-            <element signature="e#121#156#0" expanded="true" />
-            <element signature="e#2035#2079#0" expanded="false" />
+            <element signature="e#2626#2670#0" expanded="false" />
+            <element signature="n#!!block;n#main#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#2891#2909#0" expanded="false" />
+            <element signature="e#3031#3143#0" expanded="false" />
             <element signature="n#!!block;n#getParameters#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#13653#13830#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="e#11160#11203#0" expanded="false" />
+            <element signature="e#11160#11203#1" expanded="false" />
+            <element signature="n#!!block;n#runDriftCorrection#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#12314#12357#0" expanded="false" />
+            <element signature="e#12314#12357#1" expanded="false" />
+            <element signature="e#14745#14922#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14470#15220#0" expanded="false" />
-            <element signature="e#17043#17102#0" expanded="false" />
-            <element signature="e#17138#17197#0" expanded="false" />
-            <element signature="e#17312#17750#0" expanded="false" />
-            <element signature="e#18670#18735#0" expanded="false" />
-            <element signature="e#18989#19076#0" expanded="false" />
-            <element signature="e#20091#20304#0" expanded="false" />
-            <element signature="e#20448#20527#0" expanded="false" />
+            <element signature="e#15562#16312#0" expanded="false" />
+            <element signature="e#15836#15943#0" expanded="false" />
+            <element signature="n#!!block;n#detectPhaseContrastCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18212#18271#1" expanded="false" />
+            <element signature="e#18439#18476#0" expanded="false" />
+            <element signature="n#!!block;n#detectFluorescentCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#19505#19561#0" expanded="false" />
+            <element signature="e#19674#19976#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20296#20361#0" expanded="false" />
+            <element signature="e#20296#20361#1" expanded="false" />
+            <element signature="e#20674#20761#0" expanded="false" />
+            <element signature="e#21120#22098#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21320#21379#0" expanded="false" />
+            <element signature="e#21320#21379#1" expanded="false" />
+            <element signature="e#21776#21989#0" expanded="false" />
+            <element signature="e#22133#22296#0" expanded="false" />
             <element signature="n#!!block;n#trackCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#20692#20802#0" expanded="false" />
-            <element signature="e#20736#20792#0" expanded="false" />
-            <element signature="e#20972#21150#0" expanded="false" />
-            <element signature="e#21013#21140#0" expanded="false" />
-            <element signature="e#21295#23267#0" expanded="false" />
-            <element signature="e#21421#21631#0" expanded="false" />
-            <element signature="e#21469#21526#0" expanded="false" />
-            <element signature="e#21560#21617#0" expanded="false" />
-            <element signature="e#21881#22466#0" expanded="false" />
-            <element signature="e#21943#22452#0" expanded="false" />
-            <element signature="e#22275#22346#0" expanded="false" />
-            <element signature="e#22352#22434#0" expanded="false" />
-            <element signature="e#22719#23257#0" expanded="false" />
-            <element signature="e#22765#22971#0" expanded="false" />
-            <element signature="e#22977#23243#0" expanded="false" />
-            <element signature="e#23279#23402#0" expanded="false" />
+            <element signature="e#22550#22660#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22594#22650#0" expanded="false" />
+            <element signature="e#22594#22650#1" expanded="false" />
+            <element signature="e#22830#23365#0" expanded="false" />
+            <element signature="e#22871#23355#0" expanded="false" />
+            <element signature="e#23510#26105#0" expanded="false" />
+            <element signature="e#23636#23846#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23684#23741#0" expanded="false" />
+            <element signature="e#23684#23741#1" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#23775#23832#0" expanded="false" />
+            <element signature="e#23775#23832#1" expanded="false" />
+            <element signature="e#24096#24681#0" expanded="false" />
+            <element signature="e#24158#24667#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24490#24561#0" expanded="false" />
+            <element signature="e#24490#24561#1" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24567#24649#0" expanded="false" />
+            <element signature="e#24567#24649#1" expanded="false" />
+            <element signature="e#24934#26095#0" expanded="false" />
+            <element signature="e#24980#25580#0" expanded="false" />
+            <element signature="e#25586#26081#0" expanded="false" />
+            <element signature="e#26141#26264#0" expanded="false" />
             <element signature="n#!!block;n#compareCellPositions#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#23661#25501#0" expanded="false" />
-            <element signature="e#23803#25491#0" expanded="false" />
-            <element signature="e#23957#25477#0" expanded="false" />
-            <element signature="e#24450#24516#0" expanded="false" />
-            <element signature="e#24522#25459#0" expanded="false" />
-            <element signature="e#24846#25437#0" expanded="false" />
-            <element signature="e#25257#25411#0" expanded="false" />
+            <element signature="e#26523#28363#0" expanded="false" />
+            <element signature="e#26665#28353#0" expanded="false" />
+            <element signature="e#26819#28339#0" expanded="false" />
+            <element signature="e#27045#27143#0" expanded="false" />
+            <element signature="e#27312#27378#0" expanded="false" />
+            <element signature="e#27384#28321#0" expanded="false" />
+            <element signature="e#27708#28299#0" expanded="false" />
+            <element signature="e#27889#27983#0" expanded="false" />
+            <element signature="e#28119#28273#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#25900#25986#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#26281#26367#0" expanded="false" />
-            <element signature="e#26483#26968#0" expanded="false" />
-            <element signature="e#26637#26958#0" expanded="false" />
-            <element signature="n#!!block;n#exportResults#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#27302#27461#0" expanded="false" />
-            <element signature="n#!!block;n#prepareParametersXLSX#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#29996#30345#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#28552#28606#0" expanded="false" />
+            <element signature="e#30317#30428#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31894#31977#0" expanded="false" />
+            <element signature="e#31894#31977#1" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
+            <element signature="e#31983#32051#0" expanded="false" />
+            <element signature="e#31983#32051#1" expanded="false" />
             <element signature="n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#31109#31235#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#1;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#2;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#3;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#4;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Cell#5;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36096#36222#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#31525#31779#0" expanded="false" />
-            <element signature="e#31569#31769#0" expanded="false" />
-            <element signature="e#31701#31755#0" expanded="false" />
-            <element signature="n#!!block;n#getLinkedCells#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#36512#36766#0" expanded="false" />
+            <element signature="e#36556#36756#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="e#36688#36742#0" expanded="false" />
+            <element signature="e#36688#36742#1" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#addLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#removeLinkedCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="n#!!block;n#Result#0" expanded="false" />
           </folding>
         </state>
       </provider>

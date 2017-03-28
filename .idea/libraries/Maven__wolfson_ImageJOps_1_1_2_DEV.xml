@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: wolfson:ImageJOps:1.1.2-DEV">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/wolfson/ImageJOps/1.1.2-DEV/ImageJOps-1.1.2-DEV.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/wolfson/ImageJOps/1.1.2-DEV/ImageJOps-1.1.2-DEV-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/wolfson/ImageJOps/1.1.2-DEV/ImageJOps-1.1.2-DEV-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
