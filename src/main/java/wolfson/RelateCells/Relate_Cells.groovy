@@ -1,4 +1,4 @@
-// TODO: Load single image and have it work
+// TODO: Load single image
 
 package wolfson.RelateCells
 
@@ -323,6 +323,10 @@ class Relate_Cells {
         def tracks = trackCells(flCells)
         IJ.log("        "+tracks.size()+" tracks created")
 
+        // Removing overlapping cells (where fluorescent cells were detected in the phase channel)
+        IJ.log("    Removing overlapping cells")
+        removingCellOverlap(phCells, flCells)
+
         // Linking phase channel cells to fluorescence channel cells
         IJ.log("    Linking fluorescence and phase-contrast cells")
         compareCellPositions(phCells, flCells, (double) params.get("Max_Link_Threshold"), (double) params.get("Centroid_Link_Threshold"))
@@ -626,6 +630,27 @@ class Relate_Cells {
 
     }
 
+    static void removingCellOverlap(ArrayList<Cell> phCells, ArrayList<Cell> flCells) {
+        for (int i=phCells.size()-1;i>=0;i--) {
+            IJ.showProgress((phCells.size() - i) / phCells.size())
+            def phCell = phCells.get(i)
+            for (def flCell : flCells) {
+                // Only testing for a link if the cells are visible in the same frame
+                if (phCell.getPosition() == flCell.getPosition()) {
+                    // Performing a crude spatial test to check if they are remotely close
+                    def phCent = phCell.contourCentroid
+
+                    // Testing if the phase channel cell is within the boundary of the fluorescent channel cell.  This
+                    // can arise from mis-detection during the DoG/TrackMate steps
+                    if (flCell.contains(phCent[0].intValue(), phCent[1].intValue())) {
+                        phCells.remove(i)
+
+                    }
+                }
+            }
+        }
+    }
+
     /**
      * Basic analysis taking cells in each frame as isolated objects.
      * @param cells1
@@ -644,26 +669,19 @@ class Relate_Cells {
                     def phCent = phCell.contourCentroid
                     def flCent = flCell.contourCentroid
 
-                    // Testing if the phase channel cell is within the boundary of the fluorescent channel cell.  This
-                    // can arise from mis-detection during the DoG/TrackMate steps
-                    if (flCell.contains(phCent[0].intValue(), phCent[1].intValue())) {
-                        phCells.remove(i)
+                    // Calculating a crude centre-centre cell distance to identify cells for further comparison
+                    def centDist = Math.sqrt((phCent[0] - flCent[0]) * (phCent[0] - flCent[0]) + (phCent[1] - flCent[1]) * (phCent[1] - flCent[1]))
 
-                    } else {
-                        // Calculating a crude centre-centre cell distance to identify cells for further comparison
-                        def centDist = Math.sqrt((phCent[0] - flCent[0]) * (phCent[0] - flCent[0]) + (phCent[1] - flCent[1]) * (phCent[1] - flCent[1]))
+                    if (centDist < centLinkDist) {
+                        // Calculating the distance between the cells
+                        def dist = flCell.measureDistanceToCell(phCell)
 
-                        if (centDist < centLinkDist) {
-                            // Calculating the distance between the cells
-                            def dist = flCell.measureDistanceToCell(phCell)
+                        // If the distance is less than the user-defined threshold ("maxLinkDist") adding reference to
+                        // the other cell in each cell's linkedCells ArrayList
+                        if (dist < maxLinkDist) {
+                            flCell.addLinkedCell(phCell)
+                            phCell.addLinkedCell(flCell)
 
-                            // If the distance is less than the user-defined threshold ("maxLinkDist") adding reference to
-                            // the other cell in each cell's linkedCells ArrayList
-                            if (dist < maxLinkDist) {
-                                flCell.addLinkedCell(phCell)
-                                phCell.addLinkedCell(flCell)
-
-                            }
                         }
                     }
                 }
@@ -689,7 +707,6 @@ class Relate_Cells {
         // Adding phase-channel cells to the overlay
         phCells.each {
             it.setStrokeColor(it.getColour())
-            it.setPosition(1,1,it.getPosition())
             overlay.add(it)
 
         }
@@ -703,10 +720,11 @@ class Relate_Cells {
         renderIpl.setC(2)
         IJ.run(renderIpl,"Grays","")
 
+        new StackConverter(renderIpl).convertToRGB()
+
         // Adding fluorescence-channel cells to the overlay and links to phase channel cells
         flCells.each {
             it.setStrokeColor(it.getColour())
-            it.setPosition(1,1,it.getPosition())
             overlay.add(it)
 
             def links = it.getLinkedCells()
@@ -714,16 +732,15 @@ class Relate_Cells {
                 def cent1 = it.contourCentroid
                 def cent2 = link.contourCentroid
                 def line = new Line(cent1[0],cent1[1],cent2[0],cent2[1])
-                line.setPosition(1,1,it.getTPosition())
+                line.setPosition(it.getPosition())
                 line.setStrokeColor(it.getColour())
                 overlay.add(line)
 
             }
         }
 
+        // Adding the overlay to the image and saving
         renderIpl.setOverlay(overlay)
-        renderIpl.flatten()
-        new StackConverter(renderIpl).convertToRGB()
         IJ.save(renderIpl,pathOut)
 
     }
