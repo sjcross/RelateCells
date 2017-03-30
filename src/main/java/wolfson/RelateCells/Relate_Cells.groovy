@@ -11,7 +11,6 @@ import fiji.plugin.trackmate.detection.DetectorKeys
 import fiji.plugin.trackmate.detection.LogDetectorFactory
 import fiji.plugin.trackmate.features.spot.SpotIntensityAnalyzerFactory
 import fiji.plugin.trackmate.tracking.LAPUtils
-import fiji.plugin.trackmate.tracking.TrackerKeys
 import fiji.plugin.trackmate.tracking.oldlap.SimpleLAPTrackerFactory
 import ij.IJ
 import ij.ImagePlus
@@ -26,6 +25,7 @@ import ij.plugin.AVI_Reader
 import ij.plugin.ChannelSplitter
 import ij.plugin.Duplicator
 import ij.plugin.ImageCalculator
+import ij.plugin.PlugIn
 import ij.plugin.RGBStackMerge
 import ij.plugin.filter.BackgroundSubtracter
 import ij.plugin.filter.GaussianBlur
@@ -47,6 +47,7 @@ import wolfson.common.HighContent.HCFilenameGenerator
 import wolfson.common.HighContent.HCParameterExtractor
 import wolfson.common.HighContent.HCPatterns
 import wolfson.common.HighContent.HCResult
+import wolfson.common.MathFunc.CumStat
 import wolfson.common.System.FileCrawler
 
 import javax.swing.JFileChooser
@@ -63,7 +64,7 @@ import java.util.regex.Pattern
 /**
  * Created by sc13967 on 14/03/2017.
  */
-class Relate_Cells {
+class Relate_Cells implements PlugIn{
     int maxCellID = 0 // Fluorescence-channel and phase-channel cells draw from the same pool
 
     static void main(String[] args) {
@@ -170,6 +171,7 @@ class Relate_Cells {
         gd.addMessage(" ")
         gd.addMessage("FLUORESCENCE CHANNEL:")
         gd.addNumericField("DoG filter radius (px): ", 4, 1)
+        gd.addNumericField("Threshold multiplier: ", 1, 1)
         gd.addNumericField("Minimum cell size (px^2)", 10, 1)
         gd.addNumericField("Maximum cell size (px^2)", 100000, 0)
         gd.addNumericField(" Max. edge-edge distance (px): ", 20, 1)
@@ -179,9 +181,6 @@ class Relate_Cells {
         gd.addMessage("PHASE CONTRAST CHANNEL:")
         gd.addNumericField("Detection radius (px): ", 7.5, 1)
         gd.addNumericField("Threshold (px): ", 2, 1)
-        gd.addNumericField("Max. linking distance (px): ", 1, 1)
-        gd.addNumericField("Gap closing max. linking distance (px): ", 1, 1)
-        gd.addNumericField("Gap closing max. frame gap (px): ", 1, 0)
         gd.addMessage(" ")
         gd.addMessage("OUTPUT:")
         gd.addCheckbox("Display detection and links",true)
@@ -194,6 +193,7 @@ class Relate_Cells {
         params.put("Ph_name",(String) gd.getNextString())
         params.put("Border_width",(double) gd.getNextNumber()) // Percentage width of the border following drift correction
         params.put("DoG_Radius",(double) gd.getNextNumber()) // Radius for smaller Gaussian blur in DoG filtering (larger is 1.6*dogR)
+        params.put("Threshold_multiplier",(double) gd.getNextNumber())
         params.put("Min_fl_cell_size",(double) gd.getNextNumber())
         params.put("Max_fl_cell_size",(double) gd.getNextNumber())
         params.put("Max_Link_Threshold",(double) gd.getNextNumber()) // Distance in px from one cell boundary to the other
@@ -201,9 +201,6 @@ class Relate_Cells {
         params.put("Invert_intensity",(boolean) gd.getNextBoolean()) // Inverting the intensity appears necessary for some ImageJ versions (not sure why yet)
         params.put("TrackMate_Radius",(double) gd.getNextNumber())
         params.put("TrackMate_Threshold",(double) gd.getNextNumber())
-        params.put("TrackMate_Gap_Closing_Max_Dist",(double) gd.getNextNumber())
-        params.put("TrackMate_Linking_Max_Dist",(double) gd.getNextNumber())
-        params.put("TrackMate_Gap_Closing_Frame_Gap",(Integer) gd.getNextNumber())
         params.put("Display_Links",(boolean) gd.getNextBoolean())
 
         // Getting root folder for analysis
@@ -302,7 +299,7 @@ class Relate_Cells {
         // Running stack registration
         IJ.log("    Aligning image stack using StackReg")
         ipl.setT(ipl.getNFrames())
-        //IJ.run(ipl,"StackReg","transformation=Translation")
+        IJ.run(ipl,"StackReg","transformation=Translation")
 
         //Converting back to a composite image
         def ipls = new ChannelSplitter().split(ipl)
@@ -442,11 +439,6 @@ class Relate_Cells {
 
         settings.trackerFactory = new SimpleLAPTrackerFactory()
         settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap()
-        settings.trackerSettings.put(TrackerKeys.KEY_LINKING_MAX_DISTANCE,(Double) params.get("TrackMate_Linking_Max_Dist"))
-        settings.trackerSettings.put(TrackerKeys.KEY_GAP_CLOSING_MAX_DISTANCE,(Double) params.get("TrackMate_Gap_Closing_Max_Dist"))
-        settings.trackerSettings.put(TrackerKeys.KEY_GAP_CLOSING_MAX_FRAME_GAP,(Integer) params.get("TrackMate_Gap_Closing_Frame_Gap"))
-        settings.trackerSettings.put(TrackerKeys.KEY_ALLOW_TRACK_SPLITTING,false)
-        settings.trackerSettings.put(TrackerKeys.KEY_ALLOW_TRACK_MERGING,false)
 
         settings.addSpotAnalyzerFactory(new SpotIntensityAnalyzerFactory())
 
@@ -470,6 +462,7 @@ class Relate_Cells {
         spots.iterable(true).each {
             // Removing black cells, which can arise when they are accidentally detected at the image edge following
             // drift correction
+            System.out.println(it.getFeature(SpotIntensityAnalyzerFactory.MEDIAN_INTENSITY)+"_"+it.getFeature(SpotIntensityAnalyzerFactory.MIN_INTENSITY))
             if (it.getFeature(SpotIntensityAnalyzerFactory.MEDIAN_INTENSITY) > 1) {
                 def rad = it.getFeature(Spot.RADIUS)
                 def ovalRoi = new OvalRoi(it.getFeature(Spot.POSITION_X) - rad, it.getFeature(Spot.POSITION_Y) - rad, rad * 2, rad * 2)
@@ -507,9 +500,13 @@ class Relate_Cells {
             statInt[i] = Math.toIntExact(statLong[i])
         }
 
-        // Determining the threshold (Huang method)
-        def thresh = new AutoThresholder().getThreshold(AutoThresholder.Method.Otsu,statInt)
+        // Determining the threshold (Huang method) and casting to double, for the multiplication step
+        def thresh = (double) new AutoThresholder().getThreshold(AutoThresholder.Method.Otsu,statInt)
         IJ.log("        Threshold (Otsu) set to "+thresh)
+
+        // Applying user-specified offset, the converting back to int
+        thresh = (thresh*(double) params.get("Threshold_multiplier")).intValue()
+        IJ.log("        Threshold offset to "+thresh+" ("+(double) params.get("Threshold_multiplier")+"x)")
 
         // Running the threshold on each image in the stack
         for (int i=0;i<ipl.getNFrames();i++) {
@@ -858,6 +855,15 @@ class Relate_Cells {
                 trackID.appendChild(doc.createTextNode(String.valueOf(result.getTrackID())))
                 trackElement.setAttributeNode(trackID)
 
+                // Getting the mean and standard deviation for the duration of non-zero interaction runs
+                def meanInteractionDuration = doc.createAttribute("MEAN_INT_DUR")
+                meanInteractionDuration.appendChild(doc.createTextNode(String.valueOf(result.meanInteractionDuration)))
+                trackElement.setAttributeNode(meanInteractionDuration)
+
+                def stdInteractionDuration = doc.createAttribute("STD_INT_DUR")
+                stdInteractionDuration.appendChild(doc.createTextNode(String.valueOf(result.stdInteractionDuration)))
+                trackElement.setAttributeNode(stdInteractionDuration)
+
                 for (int i=0;i<result.x.length;i++) {
                     def resElement = doc.createElement("RES")
 
@@ -877,17 +883,13 @@ class Relate_Cells {
                     nLinksAttr.appendChild(doc.createTextNode(String.valueOf(result.nLinks[i])))
                     resElement.setAttributeNode(nLinksAttr)
 
-                    if (result.nLinks[i]==0) {
-                        def nLinksNormAttr = doc.createAttribute("N_LKS_N")
-                        nLinksNormAttr.appendChild(doc.createTextNode(String.valueOf(dfSci.format(Double.NaN))))
-                        resElement.setAttributeNode(nLinksNormAttr)
-
+                    def nLinksNormAttr = doc.createAttribute("N_LKS_N")
+                    if (result.nLinks[i].intValue()==0) {
+                        nLinksNormAttr.appendChild(doc.createTextNode("NaN"))
                     } else {
-                        def nLinksNormAttr = doc.createAttribute("N_LKS_N")
                         nLinksNormAttr.appendChild(doc.createTextNode(String.valueOf(dfSci.format(result.nLinksNorm[i]))))
-                        resElement.setAttributeNode(nLinksNormAttr)
-
                     }
+                    resElement.setAttributeNode(nLinksNormAttr)
 
                     trackElement.appendChild(resElement)
 
@@ -911,6 +913,11 @@ class Relate_Cells {
         IJ.log(" ")
         IJ.log("File saved!")
 
+    }
+
+    @Override
+    void run(String s) {
+        new Relate_Cells().run()
     }
 }
 
@@ -989,5 +996,54 @@ class Result extends HCResult {
     def nLinks = new int[0]
     def nLinksNorm = new int[0]
     int trackID = -1
+    double meanInteractionDuration = -1
+    double stdInteractionDuration = -1
 
+    void calculateInteractionDuration() {
+        def cs = new CumStat(1)
+
+        def currDur = 0
+        nLinks.each {
+            if (it==0) {
+                if (currDur != 0) {
+                    // Terminates the current run
+                    cs.addMeasure(currDur)
+                    currDur = 0
+                }
+
+            } else {
+                // This is still a non-zero interaction run
+                currDur++
+
+            }
+        }
+
+        // Adding the final count
+        cs.addMeasure(currDur)
+
+        // Assigns the relevant variables
+        meanInteractionDuration = cs.mean[0]
+        stdInteractionDuration = cs.std[0]
+
+    }
+
+    double getMeanInteractionDuration() {
+        // Checks if the relevant statistic has already been calculated.  If not, it runs it
+        if (meanInteractionDuration == -1) {
+            calculateInteractionDuration()
+        }
+
+        return meanInteractionDuration
+
+    }
+
+    double getStdInteractionDuration() {
+        // Checks if the relevant statistic has already been calculated.  If not, it runs it
+        if (stdInteractionDuration == -1) {
+            calculateInteractionDuration()
+        }
+
+        return stdInteractionDuration
+
+    }
 }
