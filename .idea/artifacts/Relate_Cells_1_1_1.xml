@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Relate_Cells-1.1.1">
+    <output-path>$PROJECT_DIR$/out/artifacts/Relate_Cells_1_1_1</output-path>
+    <root id="archive" name="Relate_Cells-1.1.1.jar">
+      <element id="module-output" name="RelateCells" />
+    </root>
+  </artifact>
+</component>
