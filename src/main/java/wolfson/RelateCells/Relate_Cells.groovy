@@ -14,6 +14,7 @@ import fiji.plugin.trackmate.tracking.LAPUtils
 import fiji.plugin.trackmate.tracking.oldlap.SimpleLAPTrackerFactory
 import ij.IJ
 import ij.ImagePlus
+import ij.Prefs
 import ij.gui.GenericDialog
 import ij.gui.Line
 import ij.gui.OvalRoi
@@ -39,6 +40,7 @@ import ij.process.StackProcessor
 import ij.process.StackStatistics
 import org.apache.commons.io.FilenameUtils
 import org.apache.hadoop.hbase.util.MunkresAssignment
+import wolfson.ImageJOps.SpotIntensity
 import wolfson.common.FileConditions.ExtensionMatchesString
 import wolfson.common.FileConditions.NameContainsPattern
 import wolfson.common.FileConditions.NameContainsString
@@ -163,45 +165,79 @@ class Relate_Cells implements PlugIn{
     }
 
     static HashMap<String,Object> getParameters() {
+
+        def flName = (String) Prefs.get("RelateCells.flName","Green")
+        def pHName = (String) Prefs.get("RelateCells.pHName","Phase")
+        def borderWidth = (double) Prefs.get("RelateCells.borderWidth",5)
+        def dogRadius = (double) Prefs.get("RelateCells.dogRadius",4)
+        def threshMult = (double) Prefs.get("RelateCells.threshMult",1)
+        def minSize = (double) Prefs.get("RelateCells.minSize",10)
+        def maxSize = (double) Prefs.get("RelateCells.maxSize",100000)
+        def maxEdgeDist = (double) Prefs.get("RelateCells.maxEdgeDist",20)
+        def maxCentDist = (double) Prefs.get("RelateCells.maxCentDist",50)
+        def invertIntensity = (boolean) Prefs.get("RelateCells.invertIntensity",false)
+        def detectionRadius = (double) Prefs.get("RelateCells.detectionRadius",7.5)
+        def threshold = (double) Prefs.get("RelateCells.threshold",2)
+        def minIntensity = (double) Prefs.get("RelateCells.minIntensity",20)
+        def saveDetection = (boolean) Prefs.get("RelateCells.saveDetection",true)
+
+
         GenericDialog gd = new GenericDialog("Parameters")
         gd.addMessage("GENERAL:")
-        gd.addStringField("Fluorescence channel name","Green",4)
-        gd.addStringField("Phase contrast channel name","Phase",4)
-        gd.addNumericField("Border width (%): ",5,0)
+        gd.addStringField("Fluorescence channel name",flName,4)
+        gd.addStringField("Phase contrast channel name",pHName,4)
+        gd.addNumericField("Border width (%): ",borderWidth,0)
         gd.addMessage(" ")
         gd.addMessage("FLUORESCENCE CHANNEL:")
-        gd.addNumericField("DoG filter radius (px): ", 4, 1)
-        gd.addNumericField("Threshold multiplier: ", 1, 1)
-        gd.addNumericField("Minimum cell size (px^2)", 10, 1)
-        gd.addNumericField("Maximum cell size (px^2)", 100000, 0)
-        gd.addNumericField(" Max. edge-edge distance (px): ", 20, 1)
-        gd.addNumericField("Max. centroid-centroid distance (px): ", 50, 1)
-        gd.addCheckbox("Invert intensity",false)
+        gd.addNumericField("DoG filter radius (px): ", dogRadius, 1)
+        gd.addNumericField("Threshold multiplier: ", threshMult, 1)
+        gd.addNumericField("Minimum cell size (px^2)", minSize, 1)
+        gd.addNumericField("Maximum cell size (px^2)", maxSize, 1)
+        gd.addNumericField(" Max. edge-edge distance (px): ", maxEdgeDist, 1)
+        gd.addNumericField("Max. centroid-centroid distance (px): ", maxCentDist, 1)
+        gd.addCheckbox("Invert intensity",invertIntensity)
         gd.addMessage(" ")
         gd.addMessage("PHASE CONTRAST CHANNEL:")
-        gd.addNumericField("Detection radius (px): ", 7.5, 1)
-        gd.addNumericField("Threshold (px): ", 2, 1)
+        gd.addNumericField("Detection radius (px): ", detectionRadius, 1)
+        gd.addNumericField("Threshold (px): ", threshold, 1)
+        gd.addNumericField("Minimum intensity (AU): ",minIntensity,20)
         gd.addMessage(" ")
         gd.addMessage("OUTPUT:")
-        gd.addCheckbox("Display detection and links",true)
+        gd.addCheckbox("Save detection and links",saveDetection)
 
         gd.showDialog()
 
         // Parameters
+        flName = (String) gd.getNextString()
+        pHName = (String) gd.getNextString()
+        borderWidth = (double) gd.getNextNumber()
+        dogRadius = (double) gd.getNextNumber()
+        threshMult = (double) gd.getNextNumber()
+        minSize = (double) gd.getNextNumber()
+        maxSize = (double) gd.getNextNumber()
+        maxEdgeDist = (double) gd.getNextNumber()
+        maxCentDist = (double) gd.getNextNumber()
+        invertIntensity = (boolean) gd.getNextBoolean()
+        detectionRadius = (double) gd.getNextNumber()
+        threshold = (double) gd.getNextNumber()
+        minIntensity = (double) gd.getNextNumber()
+        saveDetection = (boolean) gd.getNextBoolean()
+
         HashMap<String,Object> params = new HashMap<String, Object>()
-        params.put("Fl_name",(String) gd.getNextString())
-        params.put("Ph_name",(String) gd.getNextString())
-        params.put("Border_width",(double) gd.getNextNumber()) // Percentage width of the border following drift correction
-        params.put("DoG_Radius",(double) gd.getNextNumber()) // Radius for smaller Gaussian blur in DoG filtering (larger is 1.6*dogR)
-        params.put("Threshold_multiplier",(double) gd.getNextNumber())
-        params.put("Min_fl_cell_size",(double) gd.getNextNumber())
-        params.put("Max_fl_cell_size",(double) gd.getNextNumber())
-        params.put("Max_Link_Threshold",(double) gd.getNextNumber()) // Distance in px from one cell boundary to the other
-        params.put("Centroid_Link_Threshold",(double) gd.getNextNumber()) // Centroid distance for accurate edge-edge distance to be calculated
-        params.put("Invert_intensity",(boolean) gd.getNextBoolean()) // Inverting the intensity appears necessary for some ImageJ versions (not sure why yet)
-        params.put("TrackMate_Radius",(double) gd.getNextNumber())
-        params.put("TrackMate_Threshold",(double) gd.getNextNumber())
-        params.put("Display_Links",(boolean) gd.getNextBoolean())
+        params.put("Fl_name",flName)
+        params.put("Ph_name",pHName)
+        params.put("Border_width",borderWidth) // Percentage width of the border following drift correction
+        params.put("DoG_Radius",dogRadius) // Radius for smaller Gaussian blur in DoG filtering (larger is 1.6*dogR)
+        params.put("Threshold_multiplier",threshMult)
+        params.put("Min_fl_cell_size",minSize)
+        params.put("Max_fl_cell_size",maxSize)
+        params.put("Max_Link_Threshold",maxEdgeDist) // Distance in px from one cell boundary to the other
+        params.put("Centroid_Link_Threshold",maxCentDist) // Centroid distance for accurate edge-edge distance to be calculated
+        params.put("Invert_intensity",invertIntensity) // Inverting the intensity appears necessary for some ImageJ versions (not sure why yet)
+        params.put("TrackMate_Radius",detectionRadius)
+        params.put("TrackMate_Threshold",threshold)
+        params.put("Min_ph_intensity",minIntensity)
+        params.put("Display_Links",saveDetection)
 
         // Getting root folder for analysis
         def rootFolder = getRootFolder()
@@ -335,7 +371,7 @@ class Relate_Cells implements PlugIn{
 
         // Detecting cells in the phase-contrast channel
         IJ.log("    Detecting cells in phase-contrast channel using TrackMate")
-        ArrayList<Cell> phCells = detectPhaseContrastCells(phaseIpl, params)
+        ArrayList<Cell> phCells = detectPhaseContrastCells(phaseIpl, ipls[1], params)
         IJ.log("        "+phCells.size()+" instances found")
 
         // Detecting cells in the fluorescence channel
@@ -388,8 +424,8 @@ class Relate_Cells implements PlugIn{
 
     static ImagePlus runDoG(ImagePlus ipl, double sigma) {
         // Duplicating the input ImagePlus
-        def ipl1 = ipl
-        def ipl2 = new Duplicator().run(ipl1)
+        def ipl1 = new Duplicator().run(ipl)
+        def ipl2 = new Duplicator().run(ipl)
 
         // Converting both ImagePlus into 32-bit, to give a smoother final result
         new ImageConverter(ipl1).convertToGray32()
@@ -421,7 +457,7 @@ class Relate_Cells implements PlugIn{
 
     }
 
-    ArrayList<Cell> detectPhaseContrastCells(ImagePlus ipl, HashMap<String,Object> params) {
+    ArrayList<Cell> detectPhaseContrastCells(ImagePlus ipl, ImagePlus rawIpl, HashMap<String,Object> params) {
         def model = new Model()
 
         // Disabling logging
@@ -453,17 +489,16 @@ class Relate_Cells implements PlugIn{
         trackmate.computeSpotFeatures(true)
         trackmate.execSpotFiltering(true)
 
-//        if (!trackmate.process()) {
-//            IJ.log(trackmate.getErrorMessage())
-//        }
-
         def cells = new ArrayList<Cell>()
         def spots = model.getSpots()
+        def minInt = (double) params.get("Min_ph_intensity")
+
         spots.iterable(true).each {
             // Removing black cells, which can arise when they are accidentally detected at the image edge following
             // drift correction
-            System.out.println(it.getFeature(SpotIntensityAnalyzerFactory.MEDIAN_INTENSITY)+"_"+it.getFeature(SpotIntensityAnalyzerFactory.MIN_INTENSITY))
-            if (it.getFeature(SpotIntensityAnalyzerFactory.MEDIAN_INTENSITY) > 1) {
+            def intensity = new SpotIntensity(rawIpl,it.getFeature(Spot.POSITION_X),it.getFeature(Spot.POSITION_Y),it.getFeature(Spot.RADIUS)/1.5,it.getFeature(Spot.POSITION_T).intValue())
+
+            if (intensity.meanPointIntensity > minInt) {
                 def rad = it.getFeature(Spot.RADIUS)
                 def ovalRoi = new OvalRoi(it.getFeature(Spot.POSITION_X) - rad, it.getFeature(Spot.POSITION_Y) - rad, rad * 2, rad * 2)
                 def cell = new Cell(ovalRoi.getFloatPolygon().xpoints, ovalRoi.getFloatPolygon().ypoints, Roi.POLYGON)
@@ -1004,7 +1039,7 @@ class Result extends HCResult {
 
         def currDur = 0
         nLinks.each {
-            if (it==0) {
+            if (it == 0) {
                 if (currDur != 0) {
                     // Terminates the current run
                     cs.addMeasure(currDur)
@@ -1019,7 +1054,9 @@ class Result extends HCResult {
         }
 
         // Adding the final count
-        cs.addMeasure(currDur)
+        if (currDur != 0) {
+            cs.addMeasure(currDur)
+        }
 
         // Assigns the relevant variables
         meanInteractionDuration = cs.mean[0]

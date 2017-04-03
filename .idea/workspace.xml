@@ -7,28 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="689d7b08-d713-40d2-9d09-a1bb4b0457a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Relate_Cells_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/plugins.config" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_7a.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_ImageJOps_1_1_2_DEV.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_ImageJOps_1_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8$_closure10.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8$_closure10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_detectPhaseContrastCells_closure1.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_detectPhaseContrastCells_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9$_closure11.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9$_closure11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_measureNumCellsPerFrame_closure5.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_measureNumCellsPerFrame_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure6.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure7.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure2.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure3.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure4.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Result.class" afterPath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Result.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RelateCells.iml" afterPath="$PROJECT_DIR$/RelateCells.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" afterPath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,50 +25,39 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Relate_Cells.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Relate_Cells.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3188">
-              <caret line="472" column="31" lean-forward="true" selection-start-line="472" selection-start-column="31" selection-end-line="472" selection-end-column="31" />
+            <state relative-caret-position="329">
+              <caret line="1050" column="25" lean-forward="true" selection-start-line="1050" selection-start-column="25" selection-end-line="1050" selection-end-column="25" />
               <folding>
                 <element signature="e#57#92#0" expanded="true" />
-                <element signature="e#2222#2266#0" expanded="false" />
+                <element signature="e#2277#2321#0" expanded="false" />
                 <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#12418#12469#0" expanded="false" />
-                <element signature="e#13637#13680#0" expanded="false" />
-                <element signature="e#16259#16420#0" expanded="false" />
+                <element signature="e#14196#14247#0" expanded="false" />
+                <element signature="e#15415#15458#0" expanded="false" />
+                <element signature="e#18046#18207#0" expanded="false" />
                 <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#17060#17810#0" expanded="false" />
-                <element signature="e#23596#23743#0" expanded="false" />
-                <element signature="e#23997#24107#0" expanded="false" />
-                <element signature="e#24041#24097#0" expanded="false" />
-                <element signature="e#24277#24812#0" expanded="false" />
-                <element signature="e#24318#24802#0" expanded="false" />
+                <element signature="e#18868#19618#0" expanded="false" />
+                <element signature="e#25391#25538#0" expanded="false" />
+                <element signature="e#25792#25902#0" expanded="false" />
+                <element signature="e#25836#25892#0" expanded="false" />
+                <element signature="e#26072#26607#0" expanded="false" />
+                <element signature="e#26113#26597#0" expanded="false" />
                 <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#28814#28921#0" expanded="false" />
+                <element signature="e#30609#30716#0" expanded="false" />
                 <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
                 <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#34044#34127#0" expanded="false" />
-                <element signature="e#34133#34201#0" expanded="false" />
-                <element signature="e#39164#39290#0" expanded="false" />
+                <element signature="e#35839#35922#0" expanded="false" />
+                <element signature="e#35928#35996#0" expanded="false" />
+                <element signature="e#40959#41085#0" expanded="false" />
                 <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-                <element signature="e#39580#39834#0" expanded="false" />
-                <element signature="e#39624#39824#0" expanded="false" />
-                <element signature="e#39756#39810#0" expanded="false" />
+                <element signature="e#41375#41629#0" expanded="false" />
+                <element signature="e#41419#41619#0" expanded="false" />
+                <element signature="e#41551#41605#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CumStat.class" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
         <option value="$PROJECT_DIR$/src/main/resources/plugins.config" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
       </list>
     </option>
@@ -151,9 +120,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -175,8 +144,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,6 +274,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,7 +495,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +508,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20341787" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -582,32 +551,124 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
+            <element signature="e#2277#2321#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
             <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6851">
+          <caret line="472" column="31" lean-forward="false" selection-start-line="472" selection-start-column="31" selection-end-line="472" selection-end-column="31" />
+          <folding>
+            <element signature="e#57#92#0" expanded="true" />
+            <element signature="e#2277#2321#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
+            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#57#92#0" expanded="true" />
+            <element signature="e#2277#2321#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
+            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,32 +687,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
+            <element signature="e#2277#2321#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
             <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -670,32 +730,31 @@
           <caret line="447" column="60" lean-forward="false" selection-start-line="447" selection-start-column="60" selection-end-line="447" selection-end-column="60" />
           <folding>
             <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
+            <element signature="e#2277#2321#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
             <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -714,32 +773,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
+            <element signature="e#2277#2321#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
             <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,32 +808,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
+            <element signature="e#2277#2321#0" expanded="false" />
             <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
             <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
             <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
             <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
             <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
             <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="75" lean-forward="true" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,47 +974,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3188">
-          <caret line="472" column="31" lean-forward="true" selection-start-line="472" selection-start-column="31" selection-end-line="472" selection-end-column="31" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2222#2266#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#12418#12469#0" expanded="false" />
-            <element signature="e#13637#13680#0" expanded="false" />
-            <element signature="e#16259#16420#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#runDoG#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#17060#17810#0" expanded="false" />
-            <element signature="e#23596#23743#0" expanded="false" />
-            <element signature="e#23997#24107#0" expanded="false" />
-            <element signature="e#24041#24097#0" expanded="false" />
-            <element signature="e#24277#24812#0" expanded="false" />
-            <element signature="e#24318#24802#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#28814#28921#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#34044#34127#0" expanded="false" />
-            <element signature="e#34133#34201#0" expanded="false" />
-            <element signature="e#39164#39290#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#39580#39834#0" expanded="false" />
-            <element signature="e#39624#39824#0" expanded="false" />
-            <element signature="e#39756#39810#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="301">
+          <caret line="208" column="14" lean-forward="true" selection-start-line="208" selection-start-column="14" selection-end-line="208" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="329">
+          <caret line="1050" column="25" lean-forward="true" selection-start-line="1050" selection-start-column="25" selection-end-line="1050" selection-end-column="25" />
+          <folding>
+            <element signature="e#57#92#0" expanded="true" />
+            <element signature="e#2277#2321#0" expanded="false" />
+            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#14196#14247#0" expanded="false" />
+            <element signature="e#15415#15458#0" expanded="false" />
+            <element signature="e#18046#18207#0" expanded="false" />
+            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#18868#19618#0" expanded="false" />
+            <element signature="e#25391#25538#0" expanded="false" />
+            <element signature="e#25792#25902#0" expanded="false" />
+            <element signature="e#25836#25892#0" expanded="false" />
+            <element signature="e#26072#26607#0" expanded="false" />
+            <element signature="e#26113#26597#0" expanded="false" />
+            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#30609#30716#0" expanded="false" />
+            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
+            <element signature="e#35839#35922#0" expanded="false" />
+            <element signature="e#35928#35996#0" expanded="false" />
+            <element signature="e#40959#41085#0" expanded="false" />
+            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
+            <element signature="e#41375#41629#0" expanded="false" />
+            <element signature="e#41419#41619#0" expanded="false" />
+            <element signature="e#41551#41605#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
