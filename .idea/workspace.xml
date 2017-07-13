@@ -7,8 +7,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="689d7b08-d713-40d2-9d09-a1bb4b0457a0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mcib3d_mcib3d_core_3_81.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_quickhull3d_quickhull3d_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_combinatoricslib_combinatoricslib_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_49.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__edu_mines_mines_jtk_20151125.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jitk_jitk_tps_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mpicbg_mpicbg_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imagej_ij1_patcher_0_12_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imagej_ij_1_51g.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imagej_imagej_common_0_24_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_algorithm_0_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_realtransform_2_0_0_beta_33.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_imglib2_imglib2_roi_0_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_16_beta2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_16_beta2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_16_beta2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scijava_scijava_common_2_61_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scijava_scijava_expression_parser_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__sc_fiji_TrackMate__3_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__sc_fiji_VIB_lib_2_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__weka_weka_3_7_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_Common_1_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wolfson_ImageJOps_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Relate_Cells_1_1_1/Relate_Cells-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Cell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8$_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_compileResult_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_detectPhaseContrastCells_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9$_closure11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_exportResultsXML_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_measureNumCellsPerFrame_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_showLinkedCells_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells$_trackCells_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Relate_Cells.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Result$_calculateInteractionDuration_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wolfson/RelateCells/Result.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" afterPath="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RelateCells.iml" afterPath="$PROJECT_DIR$/RelateCells.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugins.config" afterPath="$PROJECT_DIR$/src/main/resources/plugins.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugins.config" afterPath="$PROJECT_DIR$/target/classes/plugins.config" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,54 +72,93 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Relate_Cells.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="1050" column="25" lean-forward="true" selection-start-line="1050" selection-start-column="25" selection-end-line="1050" selection-end-column="25" />
-              <folding>
-                <element signature="e#57#92#0" expanded="true" />
-                <element signature="e#2277#2321#0" expanded="false" />
-                <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#14196#14247#0" expanded="false" />
-                <element signature="e#15415#15458#0" expanded="false" />
-                <element signature="e#18046#18207#0" expanded="false" />
-                <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#18868#19618#0" expanded="false" />
-                <element signature="e#25391#25538#0" expanded="false" />
-                <element signature="e#25792#25902#0" expanded="false" />
-                <element signature="e#25836#25892#0" expanded="false" />
-                <element signature="e#26072#26607#0" expanded="false" />
-                <element signature="e#26113#26597#0" expanded="false" />
-                <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#30609#30716#0" expanded="false" />
-                <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-                <element signature="e#35839#35922#0" expanded="false" />
-                <element signature="e#35928#35996#0" expanded="false" />
-                <element signature="e#40959#41085#0" expanded="false" />
-                <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-                <element signature="e#41375#41629#0" expanded="false" />
-                <element signature="e#41419#41619#0" expanded="false" />
-                <element signature="e#41551#41605#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Relate_Cells.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="906" column="66" lean-forward="false" selection-start-line="906" selection-start-column="66" selection-end-line="906" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2699#2717#0" expanded="false" />
+                <element signature="e#2859#2971#0" expanded="false" />
+                <element signature="method#getParameters#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#getRootFolder#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#getExportLocation#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#runDriftCorrection#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#runRelation#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="docComment;method#switchTimeAndZ#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#runDoG#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="e#19803#19910#0" expanded="false" />
+                <element signature="e#22114#22218#0" expanded="false" />
+                <element signature="e#23251#23307#0" expanded="false" />
+                <element signature="docComment;method#trackCells#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#trackCells#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="e#31511#31609#0" expanded="false" />
+                <element signature="docComment;method#compareCellPositions#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="e#33284#33378#0" expanded="false" />
+                <element signature="method#measureNumCellsPerFrame#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="method#showLinkedCells#0;class#Relate_Cells#0" expanded="false" />
+                <element signature="e#38822#38918#0" expanded="false" />
+                <element signature="method#run#1;class#Relate_Cells#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exporter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Exporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="86" lean-forward="false" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="26" column="98" lean-forward="false" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -89,6 +175,10 @@
       <find>FL</find>
       <find>PH</find>
       <find>Gap</find>
+      <find>File1</find>
+      <find>meanin</find>
+      <find>nLinksN</find>
+      <find>IJ.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,10 +195,15 @@
         <option value="$PROJECT_DIR$/src/wolfson/RelateCells/Main.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/test.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugins.config" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class" />
         <option value="$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Exporter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugins.config" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Cell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.java" />
       </list>
     </option>
   </component>
@@ -120,7 +215,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
@@ -137,13 +232,13 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,54 +249,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelateCells" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: wolfson:Common:1.1.8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common-1.1.8.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RelateCells" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: wolfson:Common:1.1.8" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common-1.1.8.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MathFunc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -243,6 +290,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,8 +325,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +351,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.RelateCells">
+  <component name="RunManager" selected="Maven.Relate_Cells [package]">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -423,6 +474,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -459,18 +532,50 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="RelateCells" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <RunnerSettings RunnerId="JProfiler" />
+    <configuration default="false" name="RelateCells" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="wbif.sjx.RelateCells.Relate_Cells" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RelateCells" />
+      <envs />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Groovy.RelateCells" />
+    <configuration default="false" name="Relate_Cells [package]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="-Dmyscope=provided" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.RelateCells" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.Relate_Cells [package]" />
     </list>
   </component>
   <component name="SbtLocalSettings">
@@ -495,40 +600,58 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.50441015" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21887967" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20042644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.50441015" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27178425" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20095949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -536,7 +659,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -545,81 +668,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6851">
           <caret line="472" column="31" lean-forward="false" selection-start-line="472" selection-start-column="31" selection-end-line="472" selection-end-column="31" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,45 +684,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3332">
-          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -681,38 +701,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,38 +717,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5440">
           <caret line="447" column="60" lean-forward="false" selection-start-line="447" selection-start-column="60" selection-end-line="447" selection-end-column="60" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,73 +733,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -916,13 +828,7 @@
     <entry file="jar://$3RD_PARTY$/hbase-1.2.3/lib/hbase-client-1.2.3.jar!/org/apache/hadoop/hbase/util/JsonMapper.class" />
     <entry file="jar://$3RD_PARTY$/hbase-1.2.3/lib/hbase-server-1.2.3.jar!/org/apache/hadoop/hbase/util/MunkresAssignment.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Main.groovy" />
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCResultCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCResultCollection.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/sc/fiji/StackReg_/2.0.0/StackReg_-2.0.0.jar!/plugins.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -930,20 +836,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCParameterExtractor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCFilenameGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCParameterExtractor.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.7/Common-1.1.7.jar!/wolfson/common/HighContent/HCFilenameGenerator.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/sc/fiji/StackReg_/2.0.0/StackReg_-2.0.0.jar!/StackReg_.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -959,60 +853,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="852" column="0" lean-forward="true" selection-start-line="852" selection-start-column="0" selection-end-line="852" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Exporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="86" lean-forward="false" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugins.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="75" lean-forward="true" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
+          <caret line="0" column="76" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="98" lean-forward="false" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wbif/sjx/RelateCells/Relate_Cells.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="906" column="66" lean-forward="false" selection-start-line="906" selection-start-column="66" selection-end-line="906" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2699#2717#0" expanded="false" />
+            <element signature="e#2859#2971#0" expanded="false" />
+            <element signature="method#getParameters#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#getRootFolder#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#getExportLocation#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#runDriftCorrection#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#runRelation#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="docComment;method#switchTimeAndZ#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#runDoG#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="e#19803#19910#0" expanded="false" />
+            <element signature="e#22114#22218#0" expanded="false" />
+            <element signature="e#23251#23307#0" expanded="false" />
+            <element signature="docComment;method#trackCells#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#trackCells#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="e#31511#31609#0" expanded="false" />
+            <element signature="docComment;method#compareCellPositions#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="e#33284#33378#0" expanded="false" />
+            <element signature="method#measureNumCellsPerFrame#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="method#showLinkedCells#0;class#Relate_Cells#0" expanded="false" />
+            <element signature="e#38822#38918#0" expanded="false" />
+            <element signature="method#run#1;class#Relate_Cells#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/wolfson/Common/1.1.8/Common-1.1.8.jar!/wolfson/common/MathFunc/CumStat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="208" column="14" lean-forward="true" selection-start-line="208" selection-start-column="14" selection-end-line="208" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wolfson/RelateCells/Relate_Cells.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="1050" column="25" lean-forward="true" selection-start-line="1050" selection-start-column="25" selection-end-line="1050" selection-end-column="25" />
-          <folding>
-            <element signature="e#57#92#0" expanded="true" />
-            <element signature="e#2277#2321#0" expanded="false" />
-            <element signature="n#!!block;n#getRootFolder#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#getExportLocation#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#14196#14247#0" expanded="false" />
-            <element signature="e#15415#15458#0" expanded="false" />
-            <element signature="e#18046#18207#0" expanded="false" />
-            <element signature="n#!!block;n#switchTimeAndZ#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#18868#19618#0" expanded="false" />
-            <element signature="e#25391#25538#0" expanded="false" />
-            <element signature="e#25792#25902#0" expanded="false" />
-            <element signature="e#25836#25892#0" expanded="false" />
-            <element signature="e#26072#26607#0" expanded="false" />
-            <element signature="e#26113#26597#0" expanded="false" />
-            <element signature="n#!!block;n#removingCellOverlap#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#30609#30716#0" expanded="false" />
-            <element signature="n#!!block;n#measureNumCellsPerFrame#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#showLinkedCells#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="n#!!block;n#compileResult#0;n#!!block;n#Relate_Cells#0" expanded="false" />
-            <element signature="e#35839#35922#0" expanded="false" />
-            <element signature="e#35928#35996#0" expanded="false" />
-            <element signature="e#40959#41085#0" expanded="false" />
-            <element signature="n#!!block;n#measureDistanceToCell#0;n#!!block;n#Cell#0" expanded="false" />
-            <element signature="e#41375#41629#0" expanded="false" />
-            <element signature="e#41419#41619#0" expanded="false" />
-            <element signature="e#41551#41605#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
