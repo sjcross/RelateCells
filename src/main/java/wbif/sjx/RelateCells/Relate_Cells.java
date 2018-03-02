@@ -681,12 +681,34 @@ public class Relate_Cells implements PlugIn{
                         // Applying TrackID and colour from the previous cell to the newly linked cell
                         Cell prevCell = prevCells.get(assignment[curr]);
                         Cell currCell = currCells.get(curr);
-                        currCell.setTrackID(prevCell.getTrackID());
-                        currCell.setColour(prevCell.getColour());
 
-                        // Adding the new object to that track
-                        tracks.get(prevCell.getTrackID()).add(currCell);
+                        // Checking object separation
+                        double[] currCent = currCell.getContourCentroid();
+                        double[] prevCent = prevCell.getContourCentroid();
 
+                        double dist = Math.sqrt((prevCent[0] - currCent[0]) * (prevCent[0] - currCent[0]) + (prevCent[1] - currCent[1]) * (prevCent[1] - currCent[1]));
+
+                        if (dist < maxDist) {
+                            currCell.setTrackID(prevCell.getTrackID());
+                            currCell.setColour(prevCell.getColour());
+
+                            // Adding the new object to that track
+                            tracks.get(prevCell.getTrackID()).add(currCell);
+
+                        } else {
+                            // If the distance is larger than the linking distance, creating a new track
+                            // Assigning the next available track number to this track
+                            currCell.setTrackID(trackID++);
+
+                            // Creating a new track ArrayList and adding it to the tracks ArrayList
+                            ArrayList<Cell> track = new ArrayList<>();
+                            track.add(currCell);
+                            tracks.put(currCell.getTrackID(), track);
+
+                            // Assigning a random colour to this new track
+                            currCell.setColour(Color.getHSBColor(rand.nextFloat(), 1, 1));
+
+                        }
                     }
                 }
             }
