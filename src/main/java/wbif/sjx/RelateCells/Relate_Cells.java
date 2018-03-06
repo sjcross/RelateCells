@@ -165,7 +165,6 @@ public class Relate_Cells implements PlugIn{
     }
 
     private static HashMap<String,Object> getParameters() {
-
         String flName = Prefs.get("RelateCells.flName","Green");
         String pHName = Prefs.get("RelateCells.pHName","Phase");
         double borderWidth = Prefs.get("RelateCells.borderWidth",5);
@@ -379,7 +378,7 @@ public class Relate_Cells implements PlugIn{
         ArrayList<Cell> flCells = detectFluorescentCells(fluorIpl, params);
         IJ.log("        "+flCells.size()+" instances found");
 
-        // Linking phase contrast cells to tracks
+        // Linking fluorescence cells to tracks
         IJ.log("    Tracking cells in fluorescence channel using Apache HBase (MunkresAssignment)");
         HashMap<Integer,ArrayList<Cell>> tracks = trackCells(flCells);
         IJ.log("        "+tracks.size()+" tracks created");
@@ -597,8 +596,8 @@ public class Relate_Cells implements PlugIn{
      * Links cells using the Munkres algorithm.
      * @return HashMap containing ArrayLists of cells, sorted by the TrackID number
      */
-    private static HashMap<Integer,ArrayList<Cell>> trackCells(ArrayList<Cell> cells) {
-        double maxDist = 100;
+    protected static HashMap<Integer,ArrayList<Cell>> trackCells(ArrayList<Cell> cells) {
+        double maxDist = 30;
 
         HashMap<Integer,ArrayList<Cell>> tracks = new HashMap<>();
 
@@ -681,12 +680,34 @@ public class Relate_Cells implements PlugIn{
                         // Applying TrackID and colour from the previous cell to the newly linked cell
                         Cell prevCell = prevCells.get(assignment[curr]);
                         Cell currCell = currCells.get(curr);
-                        currCell.setTrackID(prevCell.getTrackID());
-                        currCell.setColour(prevCell.getColour());
 
-                        // Adding the new object to that track
-                        tracks.get(prevCell.getTrackID()).add(currCell);
+                        // Checking object separation
+                        double[] currCent = currCell.getContourCentroid();
+                        double[] prevCent = prevCell.getContourCentroid();
 
+                        double dist = Math.sqrt((prevCent[0] - currCent[0]) * (prevCent[0] - currCent[0]) + (prevCent[1] - currCent[1]) * (prevCent[1] - currCent[1]));
+
+                        if (dist < maxDist) {
+                            currCell.setTrackID(prevCell.getTrackID());
+                            currCell.setColour(prevCell.getColour());
+
+                            // Adding the new object to that track
+                            tracks.get(prevCell.getTrackID()).add(currCell);
+
+                        } else {
+                            // If the distance is larger than the linking distance, creating a new track
+                            // Assigning the next available track number to this track
+                            currCell.setTrackID(trackID++);
+
+                            // Creating a new track ArrayList and adding it to the tracks ArrayList
+                            ArrayList<Cell> track = new ArrayList<>();
+                            track.add(currCell);
+                            tracks.put(currCell.getTrackID(), track);
+
+                            // Assigning a random colour to this new track
+                            currCell.setColour(Color.getHSBColor(rand.nextFloat(), 1, 1));
+
+                        }
                     }
                 }
             }
@@ -753,7 +774,7 @@ public class Relate_Cells implements PlugIn{
         }
     }
 
-    private static int[] measureNumCellsPerFrame(ArrayList<Cell> cells, int nFrames) {
+    protected static int[] measureNumCellsPerFrame(ArrayList<Cell> cells, int nFrames) {
         // Initialising the results array
         int[] numCells = new int[nFrames];
 
@@ -871,7 +892,7 @@ public class Relate_Cells implements PlugIn{
 
     }
 
-    private static void exportResultsXML(ArrayList<ArrayList<Result>> results, HashMap<String,Object> params) throws ParserConfigurationException, TransformerException {
+    protected static void exportResultsXML(ArrayList<ArrayList<Result>> results, HashMap<String,Object> params) throws ParserConfigurationException, TransformerException {
         DecimalFormat dfDec = new DecimalFormat("0.##");
         DecimalFormat dfSci = new DecimalFormat("0.##E0");
 
