@@ -165,7 +165,6 @@ public class Relate_Cells implements PlugIn{
     }
 
     private static HashMap<String,Object> getParameters() {
-
         String flName = Prefs.get("RelateCells.flName","Green");
         String pHName = Prefs.get("RelateCells.pHName","Phase");
         double borderWidth = Prefs.get("RelateCells.borderWidth",5);
@@ -379,7 +378,7 @@ public class Relate_Cells implements PlugIn{
         ArrayList<Cell> flCells = detectFluorescentCells(fluorIpl, params);
         IJ.log("        "+flCells.size()+" instances found");
 
-        // Linking phase contrast cells to tracks
+        // Linking fluorescence cells to tracks
         IJ.log("    Tracking cells in fluorescence channel using Apache HBase (MunkresAssignment)");
         HashMap<Integer,ArrayList<Cell>> tracks = trackCells(flCells);
         IJ.log("        "+tracks.size()+" tracks created");
@@ -597,8 +596,8 @@ public class Relate_Cells implements PlugIn{
      * Links cells using the Munkres algorithm.
      * @return HashMap containing ArrayLists of cells, sorted by the TrackID number
      */
-    private static HashMap<Integer,ArrayList<Cell>> trackCells(ArrayList<Cell> cells) {
-        double maxDist = 100;
+    protected static HashMap<Integer,ArrayList<Cell>> trackCells(ArrayList<Cell> cells) {
+        double maxDist = 30;
 
         HashMap<Integer,ArrayList<Cell>> tracks = new HashMap<>();
 
@@ -775,7 +774,7 @@ public class Relate_Cells implements PlugIn{
         }
     }
 
-    private static int[] measureNumCellsPerFrame(ArrayList<Cell> cells, int nFrames) {
+    protected static int[] measureNumCellsPerFrame(ArrayList<Cell> cells, int nFrames) {
         // Initialising the results array
         int[] numCells = new int[nFrames];
 
@@ -893,7 +892,7 @@ public class Relate_Cells implements PlugIn{
 
     }
 
-    private static void exportResultsXML(ArrayList<ArrayList<Result>> results, HashMap<String,Object> params) throws ParserConfigurationException, TransformerException {
+    protected static void exportResultsXML(ArrayList<ArrayList<Result>> results, HashMap<String,Object> params) throws ParserConfigurationException, TransformerException {
         DecimalFormat dfDec = new DecimalFormat("0.##");
         DecimalFormat dfSci = new DecimalFormat("0.##E0");
 
