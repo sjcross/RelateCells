@@ -9,6 +9,7 @@ class Cell extends PolygonRoi {
     private int trackID = -1;
     private Color colour = Color.getHSBColor(1,1,1);
     private ArrayList<Cell> linkedCells = new ArrayList<>();
+    private double meanIntensity = 0;
 
 
     // CONSTRUCTORS
@@ -74,4 +75,11 @@ class Cell extends PolygonRoi {
         return linkedCells;
     }
 
+    public double getMeanIntensity() {
+        return meanIntensity;
+    }
+
+    public void setMeanIntensity(double meanIntensity) {
+        this.meanIntensity = meanIntensity;
+    }
 }

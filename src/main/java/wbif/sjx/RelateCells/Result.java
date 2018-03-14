@@ -9,6 +9,7 @@ class Result extends HCMetadata {
     double[] frame = new double[0];
     double[] nLinks = new double[0];
     double[] nLinksNorm = new double[0];
+    double[] meanIntensity = new double[0];
     private int trackID = -1;
     private double meanInteractionDuration = -1;
     private double stdInteractionDuration = -1;
@@ -36,6 +37,10 @@ class Result extends HCMetadata {
 
     void setnLinksNorm(double[] nLinksNorm) {
         this.nLinksNorm = nLinksNorm;
+    }
+
+    public void setMeanIntensity(double[] meanIntensity) {
+        this.meanIntensity = meanIntensity;
     }
 
     int getTrackID() {

@@ -8,10 +8,7 @@ import fiji.plugin.trackmate.detection.LogDetectorFactory;
 import fiji.plugin.trackmate.features.spot.SpotIntensityAnalyzerFactory;
 import fiji.plugin.trackmate.tracking.LAPUtils;
 import fiji.plugin.trackmate.tracking.oldlap.SimpleLAPTrackerFactory;
-import ij.IJ;
-import ij.ImagePlus;
-import ij.ImageStack;
-import ij.Prefs;
+import ij.*;
 import ij.gui.GenericDialog;
 import ij.gui.Line;
 import ij.gui.OvalRoi;
@@ -42,6 +39,7 @@ import org.w3c.dom.Element;
 import wbif.sjx.common.FileConditions.ExtensionMatchesString;
 import wbif.sjx.common.FileConditions.NameContainsPattern;
 import wbif.sjx.common.FileConditions.NameContainsString;
+import wbif.sjx.common.MathFunc.CumStat;
 import wbif.sjx.common.MetadataExtractors.IncuCyteShortFilenameExtractor;
 import wbif.sjx.common.Object.HCMetadata;
 import wbif.sjx.common.Object.SpotIntensity;
@@ -56,7 +54,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.awt.Color;
+import java.awt.*;
 import java.io.File;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -68,11 +66,14 @@ public class Relate_Cells implements PlugIn{
     private int maxCellID = 0; // Fluorescence-channel and phase-channel cells draw from the same pool
 
     public static void main(String[] args) throws TransformerException, ParserConfigurationException {
+        new ImageJ();
         new Relate_Cells().run();
 
     }
 
     private void run() throws TransformerException, ParserConfigurationException {
+        Prefs.blackBackground = false;
+
         // Starting ImageJ
         //new ImageJ()
 
@@ -143,6 +144,7 @@ public class Relate_Cells implements PlugIn{
 
             if (ipl != null) {
                 // Running stack alignment
+//                System.out.println("DRIFT CORRECTION DISABLED!");
                 ipl = runDriftCorrection(ipl, params);
 
                 // Running the cell relation process and adding the results to the cumulative results collection
@@ -165,8 +167,10 @@ public class Relate_Cells implements PlugIn{
     }
 
     private static HashMap<String,Object> getParameters() {
-        String flName = Prefs.get("RelateCells.flName","Green");
+        String flName = Prefs.get("RelateCells.flName","Red");
         String pHName = Prefs.get("RelateCells.pHName","Phase");
+        boolean usePhFl = Prefs.get("RelateCells.usePhFl",true);
+        String pHFlName = Prefs.get("RelateCells.pHflName","Green");
         double borderWidth = Prefs.get("RelateCells.borderWidth",5);
         double dogRadius = Prefs.get("RelateCells.dogRadius",4);
         double threshMult = Prefs.get("RelateCells.threshMult",1);
@@ -184,6 +188,8 @@ public class Relate_Cells implements PlugIn{
         gd.addMessage("GENERAL:");
         gd.addStringField("Fluorescence channel name",flName,4);
         gd.addStringField("Phase contrast channel name",pHName,4);
+        gd.addCheckbox("Measure phase contrast cell fluorescence",usePhFl);
+        gd.addStringField("Phase contrast fluorescence channel name",pHFlName,4);
         gd.addNumericField("Border width (%): ",borderWidth,0);
         gd.addMessage(" ");
         gd.addMessage("FLUORESCENCE CHANNEL:");
@@ -208,6 +214,8 @@ public class Relate_Cells implements PlugIn{
         // Parameters
         flName = gd.getNextString();
         pHName = gd.getNextString();
+        pHFlName = gd.getNextString();
+        usePhFl = gd.getNextBoolean();
         borderWidth = gd.getNextNumber();
         dogRadius = gd.getNextNumber();
         threshMult = gd.getNextNumber();
@@ -224,6 +232,8 @@ public class Relate_Cells implements PlugIn{
         HashMap<String,Object> params = new HashMap<>();
         params.put("Fl_name",flName);
         params.put("Ph_name",pHName);
+        params.put("PhFl_name",pHFlName);
+        params.put("UsePhFl",usePhFl);
         params.put("Border_width",borderWidth); // Percentage width of the border following drift correction
         params.put("DoG_Radius",dogRadius); // Radius for smaller Gaussian blur in DoG filtering (larger is 1.6*dogR)
         params.put("Threshold_multiplier",threshMult);
@@ -236,6 +246,23 @@ public class Relate_Cells implements PlugIn{
         params.put("TrackMate_Threshold",threshold);
         params.put("Min_ph_intensity",minIntensity);
         params.put("Display_Links",saveDetection);
+
+        Prefs.set("RelateCells.flName",flName);
+        Prefs.set("RelateCells.pHName",pHName);
+        Prefs.set("RelateCells.usePhFl",usePhFl);
+        Prefs.set("RelateCells.pHflName",pHFlName);
+        Prefs.set("RelateCells.borderWidth",borderWidth);
+        Prefs.set("RelateCells.dogRadius",dogRadius);
+        Prefs.set("RelateCells.threshMult",threshMult);
+        Prefs.set("RelateCells.minSize",minSize);
+        Prefs.set("RelateCells.maxSize",maxSize);
+        Prefs.set("RelateCells.maxEdgeDist",maxEdgeDist);
+        Prefs.set("RelateCells.maxCentDist",maxCentDist);
+        Prefs.set("RelateCells.invertIntensity",invertIntensity);
+        Prefs.set("RelateCells.detectionRadius",detectionRadius);
+        Prefs.set("RelateCells.threshold",threshold);
+        Prefs.set("RelateCells.minIntensity",minIntensity);
+        Prefs.set("RelateCells.saveDetection",saveDetection);
 
         // Getting root folder for analysis
         File rootFolder = getRootFolder();
@@ -278,8 +305,12 @@ public class Relate_Cells implements PlugIn{
         comment = comment.replaceAll((String) params.get("Fl_name"),(String) params.get("Ph_name"));
         String phFilename = IncuCyteShortFilenameExtractor.generate(comment,result.getWell(),String.valueOf(result.getField()),result.getExt());
 
+        comment = result.getComment();
+        comment = comment.replaceAll((String) params.get("Fl_name"),(String) params.get("PhFl_name"));
+        String phFlFilename = IncuCyteShortFilenameExtractor.generate(comment,result.getWell(),String.valueOf(result.getField()),result.getExt());
+
         // Creating structure to hold both image stacks
-        ImagePlus[] ipls = new ImagePlus[2];
+        ImagePlus[] ipls = (boolean) params.get("UsePhFl") ? new ImagePlus[3] : new ImagePlus[2];
 
         // Checking the phase channel also exists
         if (new File(file.getParentFile().getAbsolutePath() + "\\" + phFilename).exists()) {
@@ -295,6 +326,13 @@ public class Relate_Cells implements PlugIn{
                 ipls[1] = AVI_Reader.open(file.getParentFile().getAbsolutePath() + "\\" + phFilename, false);
                 new StackConverter(ipls[1]).convertToGray8();
 
+                // Loading the current phase contrast fluorescence channel file to ImageJ
+                if ((boolean) params.get("UsePhFl")) {
+                    IJ.log("    Loading phase-contrast fluorescence image stack (" + phFlFilename + ")");
+                    ipls[2] = AVI_Reader.open(file.getParentFile().getAbsolutePath() + "\\" + phFlFilename, false);
+                    new StackConverter(ipls[2]).convertToGray8();
+                }
+
             } else if (result.getExt().equals("tif") | result.getExt().equals("tiff")) {
                 // Loading the current fluorescence channel file to ImageJ
                 IJ.log("    Loading fluorescence image stack (" + file.getName() + ")");
@@ -304,6 +342,11 @@ public class Relate_Cells implements PlugIn{
                 IJ.log("    Loading phase-contrast image stack (" + phFilename + ")");
                 ipls[1] = IJ.openImage(file.getParentFile().getAbsolutePath() + "\\" + phFilename);
 
+                // Loading the current phase-contrast channel file to ImageJ
+                if ((boolean) params.get("UsePhFl")) {
+                    IJ.log("    Loading phase-contrast fluorescence image stack (" + phFlFilename + ")");
+                    ipls[2] = IJ.openImage(file.getParentFile().getAbsolutePath() + "\\" + phFlFilename);
+                }
             }
 
             // Combining the two images for stack registration
@@ -334,7 +377,7 @@ public class Relate_Cells implements PlugIn{
 
         //Converting back to a composite image
         ImagePlus[] ipls = ChannelSplitter.split(ipl);
-        ImagePlus[] ipls2 = new ImagePlus[]{ipls[0],ipls[1]};
+        ImagePlus[] ipls2 = (boolean) params.get("UsePhFl") ? new ImagePlus[]{ipls[0],ipls[1],ipls[2]} : new ImagePlus[]{ipls[0],ipls[1]};
         ipl = RGBStackMerge.mergeChannels(ipls2,false);
 
         // Cropping the image to the central region
@@ -395,6 +438,13 @@ public class Relate_Cells implements PlugIn{
         IJ.log("    Calculating number of cells per frame in phase-contrast channel");
         int[] phCellsPerFrame = measureNumCellsPerFrame(phCells, ipl.getNFrames());
 
+        // Measuring fluorescence intensity of phase-contrast cells
+        if ((boolean) params.get("UsePhFl")) {
+            IJ.log("    Measuring fluorescence intensity of cells in phase-contrast channel");
+            ImagePlus phaseFluorIpl = new Duplicator().run(ipls[2]);
+            measureFluorescenceIntensity(phCells, phaseFluorIpl);
+        }
+
         // Displaying the tracked cells on the fluorescence channel
         if ((boolean) params.get("Display_Links")) {
             IJ.log("    Saving overlay image");
@@ -404,7 +454,7 @@ public class Relate_Cells implements PlugIn{
         }
 
         // Compiling results into an ArrayList of results
-        return compileResult(templateResult,tracks,phCellsPerFrame);
+        return compileResult(templateResult,tracks,phCellsPerFrame,params);
 
     }
 
@@ -786,6 +836,24 @@ public class Relate_Cells implements PlugIn{
 
     }
 
+    private static void measureFluorescenceIntensity(ArrayList<Cell> cells, ImagePlus ipl) {
+        for (Cell cell:cells) {
+            CumStat cumStat = new CumStat();
+            for (Point point:cell.getContainedPoints()) {
+                int t = cell.getPosition();
+                int x = (int) Math.round(point.getX());
+                int y = (int) Math.round(point.getY());
+
+                ipl.setPosition(t);
+                cumStat.addMeasure(ipl.getProcessor().getPixel(x,y));
+
+            }
+
+            cell.setMeanIntensity(cumStat.getMean());
+
+        }
+    }
+
     private static void showLinkedCells(ArrayList<Cell> phCells, ArrayList<Cell> flCells, ImagePlus ipl, String pathOut) {
         Overlay overlay = new Overlay();
 
@@ -801,9 +869,11 @@ public class Relate_Cells implements PlugIn{
 
         // Setting LUTs for the two channels
         renderIpl.setC(1);
-        IJ.run(renderIpl,"Green","");
+        IJ.run(renderIpl,"Red","");
         renderIpl.setC(2);
         IJ.run(renderIpl,"Grays","");
+        renderIpl.setC(3);
+        IJ.run(renderIpl,"Green","");
 
         new StackConverter(renderIpl).convertToRGB();
 
@@ -830,7 +900,7 @@ public class Relate_Cells implements PlugIn{
 
     }
 
-    private static ArrayList<Result> compileResult(Result templateResult, HashMap<Integer,ArrayList<Cell>> tracks, int[] cellsPerFrame) {
+    private static ArrayList<Result> compileResult(Result templateResult, HashMap<Integer,ArrayList<Cell>> tracks, int[] cellsPerFrame, HashMap<String,Object> params) {
         ArrayList<Result> results = new ArrayList<>();
 
         // Runs through each track, creating a new Result object and adding it to the ArrayList of results.  Each track
@@ -854,6 +924,7 @@ public class Relate_Cells implements PlugIn{
             double[] frame = new double[cells.size()];
             double[] nLinks = new double[cells.size()];
             double[] nLinksNorm = new double[cells.size()];
+            double[] meanIntensity = new double[cells.size()];
 
             // Going through each cell for the current track and adding its information to the result arrays
             for (int idx = 0; idx < cells.size(); idx++) {
@@ -865,14 +936,23 @@ public class Relate_Cells implements PlugIn{
 
                 frame[idx] = cell.getPosition();
 
+                // Calculating the number of links
                 nLinks[idx] = cell.getLinkedCells().size();
-
                 int nCells = cell.getLinkedCells().size();
                 int currNCellsPerFrame = cellsPerFrame[cell.getPosition() - 1];
                 if (nCells != 0 & currNCellsPerFrame != 0) {
                     nLinksNorm[idx] = (double) nCells / (double) currNCellsPerFrame;
                 } else {
                     nLinksNorm[idx] = Double.NaN;
+                }
+
+                // Calculating the mean intensity of attached spots
+                if ((boolean) params.get("UsePhFl")) {
+                    CumStat cumStat = new CumStat();
+                    for (Cell linkedCell : cell.getLinkedCells()) {
+                        cumStat.addMeasure(linkedCell.getMeanIntensity());
+                    }
+                    meanIntensity[idx] = cumStat.getMean();
                 }
             }
 
@@ -882,6 +962,7 @@ public class Relate_Cells implements PlugIn{
             result.setFrame(frame);
             result.setnLinks(nLinks);
             result.setnLinksNorm(nLinksNorm);
+            result.setMeanIntensity(meanIntensity);
 
             // Adding the current result to the ArrayList of results
             results.add(result);
@@ -950,6 +1031,12 @@ public class Relate_Cells implements PlugIn{
                         nLinksNormAttr.appendChild(doc.createTextNode(String.valueOf(dfSci.format(result.nLinksNorm[i]))));
                     }
                     resElement.setAttributeNode(nLinksNormAttr);
+
+                    if ((boolean) params.get("UsePhFl")) {
+                        Attr meanIntAttr = doc.createAttribute("MEAN_INT");
+                        meanIntAttr.appendChild(doc.createTextNode(String.valueOf(result.meanIntensity[i])));
+                        resElement.setAttributeNode(meanIntAttr);
+                    }
 
                     trackElement.appendChild(resElement);
 
