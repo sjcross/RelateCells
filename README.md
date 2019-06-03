@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1422439.svg)](https://zenodo.org/record/1422439)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3237585.svg)](https://zenodo.org/record/3237585)
 
 Installation
 ------------
@@ -31,4 +31,4 @@ This plugin is still in development and test coverage is currently incomplete.  
 
 Acknowledgements
 ----------------
-A list of bundled dependencies along with their respective licenses can be found [here](https://cdn.statically.io/gh/SJCross/TrackAnalysis/cd9fb994/target/site/dependencies.html).
+A list of bundled dependencies along with their respective licenses can be found [here](https://cdn.statically.io/gh/SJCross/RelateCells/00462dff/target/site/dependencies.html).
